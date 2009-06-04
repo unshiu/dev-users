@@ -1,0 +1,222 @@
+/*
+   typography
+-------------------------------------------------------------- */
+
+h2 {font-size:1.5em;font-weight:bold;padding-top:0.75em;margin-bottom:0em;color:#c2d2d2;}
+h3 {font-size:1.2em;font-weight:bold;line-height:1;margin-bottom:1em;margin-left:1em;}
+
+a {color:#09f;text-decoration:none;}
+a:link {color:#009;text-decoration:none;}
+a:focus, a:hover {color:#009;text-decoration:underline;}
+/*
+a {color:#ff8a00;text-decoration:none;}
+a:link {color:#ffa500;text-decoration:none;}
+a:focus, a:hover {color:#cca500;text-decoration:underline;}
+*/
+
+#contents_box,
+#footer_box,
+body{
+	background:#5a646e;
+	background:#50575e ;
+
+}
+#footer_box .box_inner{
+	padding: 1.5em 0;
+}
+
+#footer_box,
+#footer_box a {color:#ffeeee;text-decoration:none;}
+#footer_box a:link {color:#ffeeee;text-decoration:none;}
+#footer_box a:focus,#footer_box a:hover {color:#cca500;text-decoration:underline;}
+
+/* container
+-------------------------------------------------------------- */
+
+#container_box{
+
+	background:#3f454c ;
+	background-image: url("/images/default/filter/gradation_t35_filter.png") repeat-x;
+
+
+}
+#header_col{
+/*	background:#ffa500 url("/images/default/filter/gradation_t35_filter.png") repeat-x;*/
+
+}
+#header_box{
+	padding-top:10px;
+}
+/* Common
+-------------------------------------------------------------- */
+.top_portal #contents_box{
+	font-size:85%;
+}
+#download_box .more{
+	font-size:1.2em;
+}
+
+#logo_box{
+/*	background-color:#ffa500;*/
+	background-image: url("/images/default/filter/gradation_t35_filter.png") scroll 100%;
+}
+#logo_box img{
+	margin-top:-2px;
+}
+/*  Common
+			pager
+-------------------------------------------------------------- */
+.pagenation span a,.pagenation span a:link {
+	background:#ffa500;
+	border:solid 1px #ffa500;
+	padding:0.3em 0.5em;
+}
+.pagenation span a,.pagenation span a:link {
+	background:#7dc900;
+	border:solid 1px #7dc900;
+	padding:0.3em 0.5em;
+}
+.pagenation span a,.pagenation span a:link {
+	background:#3f454c;
+	border:solid 1px #b2b2b2;
+	padding:0.3em 0.5em;
+	color:#eee;
+}
+.pagenation span a:hover {
+	color:#888;
+}
+.link_off{
+	color:#888888;
+}
+.page_on_pages{
+	color:#ccc;
+}
+
+/*  Common
+			box_inner > pager_box
+-------------------------------------------------------------- */
+
+#message_rows_header  .pager_box .pagenation span a,.pagenation span a:link ,
+#message_rows_footer  .pager_box .pagenation span a,.pagenation span a:link ,
+.box_header > .pager_box .pagenation span a,.pagenation span a:link ,
+.box_footer > .pager_box .pagenation span a,.pagenation span a:link ,
+.box_inner > .pager_box .pagenation span a,.pagenation span a:link {
+	background:#f6f6f8;
+	border:solid 1px #ffa500;
+	padding:0.3em 0.5em;
+}
+#message_rows_header  .pager_box .pagenation span a,.pagenation span a:link ,
+#message_rows_footer  .pager_box .pagenation span a,.pagenation span a:link ,
+.box_header > .pager_box .pagenation span a,.pagenation span a:link ,
+.box_footer > .pager_box .pagenation span a,.pagenation span a:link ,
+.box_inner > .pager_box .pagenation span a,.pagenation span a:link {
+	background:#7dc900;
+	border:solid 1px #7dddddd;
+	padding:0.3em 0.5em;
+}
+#message_rows_header  .pager_box .pagenation span a,.pagenation span a:link ,
+#message_rows_footer  .pager_box .pagenation span a,.pagenation span a:link ,
+.box_header > .pager_box .pagenation span a,.pagenation span a:link ,
+.box_footer > .pager_box .pagenation span a,.pagenation span a:link ,
+.box_inner > .pager_box .pagenation span a,.pagenation span a:link {
+	background:transparent;
+	border:solid 1px #dddddd;
+	padding:0.3em 0.5em;
+	color:#888;
+}
+#message_rows_header  .pager_box .pagenation span a:hover ,
+#message_rows_footer  .pager_box .pagenation span a:hover ,
+.box_header > .pager_box .pagenation span a:hover ,
+.box_footer > .pager_box .pagenation span a:hover ,
+.box_inner > .pager_box .pagenation span a:hover {
+	color:#888;
+}
+#message_rows_header  .pager_box .link_off,
+#message_rows_footer  .pager_box .link_off,
+.box_header > .pager_box .link_off,
+.box_footer > .pager_box .link_off,
+.box_inner > .pager_box .link_off{
+	color:#888888;
+}
+#message_rows_header  .pager_box .page_on_pages,
+#message_rows_footer  .pager_box .page_on_pages,
+.box_header > .pager_box .page_on_pages,
+.box_footer > .pager_box .page_on_pages,
+.box_inner > .pager_box .page_on_pages{
+	color:#888;
+}
+#message_rows_header .pagenation span.pagenation_on a,
+#message_rows_header .pagenation span.pagenation_on a:link,
+#message_rows_header .pagenation span.pagenation_on a:hover,
+#message_rows_footer .pagenation span.pagenation_on a,
+#message_rows_footer .pagenation span.pagenation_on a:link,
+#message_rows_footer .pagenation span.pagenation_on a:hover,
+.box_inner > .pager_box .pagenation span.pagenation_on a,
+.box_inner > .pager_box .pagenation span.pagenation_on a:link,
+.box_inner > .pager_box .pagenation span.pagenation_on a:hover {
+	border:solid 0px transparent;
+	border-width:0px;
+	border-style:collapse;
+	border-color:fff;
+	font-weight:bold;
+	padding:0.3em 0.5em;
+	background:transparent;
+}
+/* Profile
+-------------------------------------------------------------- */
+#home_profiles_box{
+	background:transparent;
+}
+/* Sub Menu List (HOME)
+-------------------------------------------------------------- */
+#home_sub_menu_box {
+	background:transparent;
+	border-bottom:0px dotted #d6d6d6;
+}
+/* Sub Menu List
+-------------------------------------------------------------- */
+
+#sub_menu_col .sub_menu_tab li {margin:1px 1px 0px 1px;background:#50575E url("/images/default/filter/gradation_t35_filter.png") scroll 100%;}
+#sub_menu_col .sub_menu_tab li.current{background:#ffa500;}
+
+#sub_menu_col a .sub_menu_title{
+	color:#f2f2f2;
+}
+/*#sub_menu_col a .sub_menu_title{color:#2d8000;}*/
+#sub_menu_col .current a .sub_menu_title{color:#f2f2f2;}
+
+
+/* Download
+-------------------------------------------------------------- */
+#download_box a.button span{
+ 	padding-left:40px!important;
+}
+
+/* Config (Base_user_config)
+-------------------------------------------------------------- */
+#main_contents_box_menu ul{
+	background:transparent;
+	background:#7dc900;
+	background:#5a646e;
+	border:0px;
+}
+.box_inner > h2,
+.point_show h2{
+	color:#7dc900;
+}
+/* Error 404 500
+-------------------------------------------------------------- */
+
+.balloon_left_arrow{
+
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-right: 30px solid #ffffff; 
+    border-left: none; 
+    border-top: 10px solid #50575E; 
+    border-bottom: 10px solid #50575E; 
+    position: absolute; 
+    bottom: 30px; 
+    left: 130px; 
+}

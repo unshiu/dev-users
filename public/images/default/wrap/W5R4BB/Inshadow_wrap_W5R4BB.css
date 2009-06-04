@@ -1,0 +1,294 @@
+
+/* wrap W5R4BB
+-------------------------------------------------------------- */
+h5.W5R4BB span,
+h6.W5R4BB span{
+	display:block;
+	background:#d6d6d6 url("/images/default/filter/gradation_t35_filter.png") scroll 50%;
+	padding:1em;
+	margin:-22px -22px 0em -22px;
+}
+.W5R4BB .wrap1{
+	padding:6px 0px 0px;
+	padding-bottom:3px; /* 2box_over for ie6 */
+	margin:0px -3px 0px -1px;
+	border-width:0px;
+}
+*html .W5R4BB .wrap1{
+	padding:5px 0px 0px;
+}
+.W5R4BB .wrap2{
+	padding:0px 0px 8px;
+	border-width:0px;
+}
+.W5R4BB .wrap3{
+	padding:0px 3px 0px 0px;
+	border-width:0px;
+}
+.W5R4BB .box_inner{
+	border-width:0px;
+}
+.span-24 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_96.png") 0px bottom no-repeat ;
+}
+.span-24 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_95.png") repeat-y ;
+}
+.span-24 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_94.png") no-repeat ;
+}
+.span-24 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_93.png") 0px -6px no-repeat ;
+}
+.span-23 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_92.png") 0px bottom no-repeat ;
+}
+.span-23 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_91.png") repeat-y ;
+}
+.span-23 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_90.png") no-repeat ;
+}
+.span-23 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_89.png") 0px -6px no-repeat ;
+}
+.span-22 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_88.png") 0px bottom no-repeat ;
+}
+.span-22 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_87.png") repeat-y ;
+}
+.span-22 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_86.png") no-repeat ;
+}
+.span-22 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_85.png") 0px -6px no-repeat ;
+}
+.span-21 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_84.png") 0px bottom no-repeat ;
+}
+.span-21 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_83.png") repeat-y ;
+}
+.span-21 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_82.png") no-repeat ;
+}
+.span-21 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_81.png") 0px -6px no-repeat ;
+}
+.span-20 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_80.png") 0px bottom no-repeat ;
+}
+.span-20 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_79.png") repeat-y ;
+}
+.span-20 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_78.png") no-repeat ;
+}
+.span-20 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_77.png") 0px -6px no-repeat ;
+}
+.span-19 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_76.png") 0px bottom no-repeat ;
+}
+.span-19 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_75.png") repeat-y ;
+}
+.span-19 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_74.png") no-repeat ;
+}
+.span-19 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_73.png") 0px -6px no-repeat ;
+}
+.span-18 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_72.png") 0px bottom no-repeat ;
+}
+.span-18 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_71.png") repeat-y ;
+}
+.span-18 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_70.png") no-repeat ;
+}
+.span-18 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_69.png") 0px -6px no-repeat ;
+}
+.span-17 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_68.png") 0px bottom no-repeat ;
+}
+.span-17 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_67.png") repeat-y ;
+}
+.span-17 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_66.png") no-repeat ;
+}
+.span-17 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_65.png") 0px -6px no-repeat ;
+}
+.span-16 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_64.png") 0px bottom no-repeat ;
+}
+.span-16 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_63.png") repeat-y ;
+}
+.span-16 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_62.png") no-repeat ;
+}
+.span-16 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_61.png") 0px -6px no-repeat ;
+}
+.span-15 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_60.png") 0px bottom no-repeat ;
+}
+.span-15 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_59.png") repeat-y ;
+}
+.span-15 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_58.png") no-repeat ;
+}
+.span-15 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_57.png") 0px -6px no-repeat ;
+}
+.span-14 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_56.png") 0px bottom no-repeat ;
+}
+.span-14 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_55.png") repeat-y ;
+}
+.span-14 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_54.png") no-repeat ;
+}
+.span-14 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_53.png") 0px -6px no-repeat ;
+}
+.span-13 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_52.png") 0px bottom no-repeat ;
+}
+.span-13 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_51.png") repeat-y ;
+}
+.span-13 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_50.png") no-repeat ;
+}
+.span-13 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_49.png") 0px -6px no-repeat ;
+}
+.span-12 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_48.png") 0px bottom no-repeat ;
+}
+.span-12 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_47.png") repeat-y ;
+}
+.span-12 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_46.png") no-repeat ;
+}
+.span-12 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_45.png") 0px -6px no-repeat ;
+}
+.span-11 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_44.png") 0px bottom no-repeat ;
+}
+.span-11 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_43.png") repeat-y ;
+}
+.span-11 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_42.png") no-repeat ;
+}
+.span-11 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_41.png") 0px -6px no-repeat ;
+}
+.span-10 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_40.png") 0px bottom no-repeat ;
+}
+.span-10 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_39.png") repeat-y ;
+}
+.span-10 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_38.png") no-repeat ;
+}
+.span-10 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_37.png") 0px -6px no-repeat ;
+}
+.span-9 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_36.png") 0px bottom no-repeat ;
+}
+.span-9 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_35.png") repeat-y ;
+}
+.span-9 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_34.png") no-repeat ;
+}
+.span-9 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_33.png") 0px -6px no-repeat ;
+}
+.span-8 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_32.png") 0px bottom no-repeat ;
+}
+.span-8 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_31.png") repeat-y ;
+}
+.span-8 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_30.png") no-repeat ;
+}
+.span-8 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_29.png") 0px -6px no-repeat ;
+}
+.span-7 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_28.png") 0px bottom no-repeat ;
+}
+.span-7 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_27.png") repeat-y ;
+}
+.span-7 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_26.png") no-repeat ;
+}
+.span-7 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_25.png") 0px -6px no-repeat ;
+}
+.span-6 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_24.png") 0px bottom no-repeat ;
+}
+.span-6 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_23.png") repeat-y ;
+}
+.span-6 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_22.png") no-repeat ;
+}
+.span-6 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_21.png") 0px -6px no-repeat ;
+}
+.span-5 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_20.png") 0px bottom no-repeat ;
+}
+.span-5 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_19.png") repeat-y ;
+}
+.span-5 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_18.png") no-repeat ;
+}
+.span-5 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_17.png") 0px -6px no-repeat ;
+}
+.span-4 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_36.png") 0px bottom no-repeat ;
+}
+.span-4 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_35.png") repeat-y ;
+}
+.span-4 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_34.png") no-repeat ;
+}
+.span-4 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_33.png") 0px -6px no-repeat ;
+}
+.span-3 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_12.png") 0px bottom no-repeat ;
+}
+.span-3 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_11.png") repeat-y ;
+}
+.span-3 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_10.png") no-repeat ;
+}
+.span-3 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_9.png") 0px -6px no-repeat ;
+}
+.span-2 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_8.png") 0px bottom no-repeat ;
+}
+.span-2 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_7.png") repeat-y ;
+}
+.span-2 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_6.png") no-repeat ;
+}
+.span-2 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_5.png") 0px -6px no-repeat ;
+}
+.span-1 .W5R4BB .wrap2{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_4.png") 0px bottom no-repeat ;
+}
+.span-1 .W5R4BB .wrap3{	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_3.png") repeat-y ;
+}
+.span-1 .W5R4BB .box_inner{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_2.png") no-repeat ;
+}
+.span-1 .W5R4BB .wrap1{
+	background:transparent url("/images/default/wrap/W5R4BB/images/W5R4BB_1.png") 0px -6px no-repeat ;
+}

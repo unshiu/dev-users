@@ -70,3 +70,1053 @@
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
   [4;35;1mSQL (2.5ms)[0m   [0mSHOW TABLES[0m
   [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#index (for 127.0.0.1 at 2009-06-04 11:39:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base"}
+controller_name base: action_name index
+  [4;36;1mBaseNotice Load (0.6ms)[0m   [0;1mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:39:36' and end_datetime > '2009-06-04 11:39:36') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:39:36') ORDER BY start_datetime desc[0m
+==> Got DiaEntry:DiaEntry#portal_public_entries from cache. (0.00278)
+  [4;35;1mDiaEntry Load (0.4ms)[0m   [0mSELECT * FROM `dia_entries` WHERE (draft_flag != true and public_level = 1) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:39:36') ORDER BY contributed_at desc LIMIT 3[0m
+==> Set DiaEntry:DiaEntry#portal_public_entries to cache. (0.00033)
+==> Got AbmAlbum:AbmAlbum#portal_public_albums from cache. (0.00044)
+  [4;36;1mAbmAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM `abm_albums` WHERE (public_level = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:39:36') ORDER BY updated_at desc LIMIT 3[0m
+==> Set AbmAlbum:AbmAlbum#portal_public_albums to cache. (0.00036)
+==> Got CmmCommunity:CmmCommunity#portal_communities from cache. (0.00036)
+  [4;35;1mCmmCommunity Load (0.4ms)[0m   [0mSELECT * FROM `cmm_communities` WHERE (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:39:36') ORDER BY created_at desc LIMIT 3[0m
+==> Set CmmCommunity:CmmCommunity#portal_communities to cache. (0.00031)
+==> Got TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics from cache. (0.00035)
+  [4;36;1mTpcTopicCmmCommunity Load (0.4ms)[0m   [0;1mSELECT * FROM `tpc_topic_cmm_communities` WHERE ( public_level = 1 ) AND (tpc_topic_cmm_communities.deleted_at IS NULL OR tpc_topic_cmm_communities.deleted_at > '2009-06-04 11:39:36') ORDER BY created_at desc LIMIT 3[0m
+==> Set TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics to cache. (0.00031)
+Rendering base/index
+Rendering nested layouts ["layouts/portal"]
+Rendered common/_header_search (2.4ms)
+Rendered common/_header_menu (1.6ms)
+Rendered common/_flash_info (0.6ms)
+Rendered common/_footer (2.8ms)
+Rendered layouts/_portal (26.1ms)
+Completed in 399ms (View: 34, Memcache: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#index (for 127.0.0.1 at 2009-06-04 11:42:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base"}
+controller_name base: action_name index
+  [4;36;1mBaseNotice Load (0.5ms)[0m   [0;1mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:42:17' and end_datetime > '2009-06-04 11:42:17') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:42:17') ORDER BY start_datetime desc[0m
+==> Got DiaEntry:DiaEntry#portal_public_entries from cache. (0.00235)
+==> Got AbmAlbum:AbmAlbum#portal_public_albums from cache. (0.00046)
+==> Got CmmCommunity:CmmCommunity#portal_communities from cache. (0.00034)
+==> Got TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics from cache. (0.00039)
+Rendering base/index
+Rendering nested layouts ["layouts/portal"]
+Rendered common/_header_search (2.5ms)
+Rendered common/_header_menu (1.7ms)
+Rendered common/_flash_info (0.5ms)
+Rendered common/_footer (3.1ms)
+Rendered layouts/_portal (27.6ms)
+Completed in 339ms (View: 36, Memcache: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#index (for 127.0.0.1 at 2009-06-04 11:42:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base"}
+controller_name base: action_name index
+  [4;36;1mBaseNotice Load (0.5ms)[0m   [0;1mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:42:49' and end_datetime > '2009-06-04 11:42:49') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:42:49') ORDER BY start_datetime desc[0m
+==> Got DiaEntry:DiaEntry#portal_public_entries from cache. (0.00031)
+==> Got AbmAlbum:AbmAlbum#portal_public_albums from cache. (0.00032)
+==> Got CmmCommunity:CmmCommunity#portal_communities from cache. (0.00037)
+==> Got TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics from cache. (0.00037)
+Rendering base/index
+Rendering nested layouts ["layouts/portal"]
+Rendered common/_header_search (0.7ms)
+Rendered common/_header_menu (0.2ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_portal (10.0ms)
+Completed in 247ms (View: 15, Memcache: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#index (for 127.0.0.1 at 2009-06-04 11:43:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base"}
+controller_name base: action_name index
+  [4;36;1mBaseNotice Load (0.5ms)[0m   [0;1mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:43:43' and end_datetime > '2009-06-04 11:43:43') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:43:43') ORDER BY start_datetime desc[0m
+==> Got DiaEntry:DiaEntry#portal_public_entries from cache. (0.00035)
+==> Got AbmAlbum:AbmAlbum#portal_public_albums from cache. (0.00035)
+==> Got CmmCommunity:CmmCommunity#portal_communities from cache. (0.00034)
+==> Got TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics from cache. (0.00033)
+Rendering base/index
+Rendering nested layouts ["layouts/portal"]
+Rendered common/_header_search (0.6ms)
+Rendered common/_header_menu (0.2ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.7ms)
+Rendered layouts/_portal (9.9ms)
+Completed in 252ms (View: 18, Memcache: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#index (for 127.0.0.1 at 2009-06-04 11:44:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base"}
+controller_name base: action_name index
+  [4;36;1mBaseNotice Load (0.4ms)[0m   [0;1mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:44:54' and end_datetime > '2009-06-04 11:44:54') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:44:54') ORDER BY start_datetime desc[0m
+==> Got DiaEntry:DiaEntry#portal_public_entries from cache. (0.00032)
+==> Got AbmAlbum:AbmAlbum#portal_public_albums from cache. (0.00033)
+==> Got CmmCommunity:CmmCommunity#portal_communities from cache. (0.00036)
+==> Got TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics from cache. (0.00036)
+Rendering base/index
+Rendering nested layouts ["layouts/portal"]
+Rendered common/_header_search (0.7ms)
+Rendered common/_header_menu (0.2ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_portal (10.9ms)
+Completed in 246ms (View: 15, Memcache: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseUserController#login (for 127.0.0.1 at 2009-06-04 11:45:07) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"/oXBt4K/SuOY/8UTWhUK+zUMrT9Ejv6ZyLQmG20A4oE=", "controller"=>"base_user", "login"=>"unshiu@drecom.co.jp", "password"=>"[FILTERED]"}
+controller_name base_user: action_name login
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBaseUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `base_users`[0m
+  [4;36;1mBaseUser Load (0.6ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`login` = 'unshiu@drecom.co.jp') AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:45:07') LIMIT 1[0m
+  [4;35;1mBaseCarrier Load (0.4ms)[0m   [0mSELECT * FROM `base_carriers` WHERE ( name = 'other' ) AND (base_carriers.deleted_at IS NULL OR base_carriers.deleted_at > '2009-06-04 11:45:07') LIMIT 1[0m
+  [4;36;1mBaseUser Load (0.3ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:45:07') [0m
+  [4;35;1mBaseCarrier Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `base_carriers`[0m
+Switching to Master
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBaseUser Exists (0.4ms)[0m   [0mSELECT `base_users`.id FROM `base_users` WHERE (LOWER(`base_users`.`login`) = BINARY 'unshiu@drecom.co.jp' AND `base_users`.deleted_at IS NULL AND `base_users`.id <> 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:45:08') LIMIT 1[0m
+  [4;36;1mBaseUser Exists (0.2ms)[0m   [0;1mSELECT `base_users`.id FROM `base_users` WHERE (LOWER(`base_users`.`email`) = BINARY 'unshiu@drecom.co.jp' AND `base_users`.deleted_at IS NULL AND `base_users`.id <> 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:45:08') LIMIT 1[0m
+  [4;35;1mBaseProfile Load (2.0ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:45:08') LIMIT 1[0m
+  [4;36;1mBaseProfile Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `base_profiles`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Switching to Slave
+Redirected to http://localhost:3000/base/portal
+  [4;36;1mPntFilter Load (0.5ms)[0m   [0;1mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base_user' and action_name = 'login' and (start_at is null or start_at < '2009-06-04 11:45:08') and (end_at is null or end_at > '2009-06-04 11:45:08')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:45:08') [0m
+Completed in 426ms (DB: 3) | 302 Found [http://localhost/base_user/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#portal (for 127.0.0.1 at 2009-06-04 11:45:08) [GET]
+  Parameters: {"action"=>"portal", "controller"=>"base"}
+controller_name base: action_name portal
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBaseUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `base_users`[0m
+  [4;36;1mBaseUser Load (0.5ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:45:08') LIMIT 1[0m
+  [4;35;1mBaseNotice Load (0.4ms)[0m   [0mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:45:08' and end_datetime > '2009-06-04 11:45:08') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:45:08') ORDER BY start_datetime desc[0m
+  [4;36;1mMsgReceiver Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `msg_receivers`[0m
+  [4;35;1mMsgMessage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `msg_messages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_receivers` ON `msg_messages`.id = `msg_receivers`.msg_message_id WHERE (((msg_receivers.base_user_id = 1) AND (msg_receivers.deleted_at IS NULL OR msg_receivers.deleted_at > '2009-06-04 11:45:08') AND (((draft_flag = false or draft_flag is null) and trash_status is null and read_flag != true))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:45:08')) [0m
+  [4;35;1mBaseFriend Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `base_friends`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_friends` WHERE ((`base_friends`.friend_id = 1 AND (status = 2 and base_friends.deleted_at is null)) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:45:08')) [0m
+  [4;35;1mDiaEntryComment Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `dia_entry_comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(DISTINCT `dia_entry_comments`.id) AS count_all FROM `dia_entry_comments` LEFT OUTER JOIN `dia_entries` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id LEFT OUTER JOIN `dia_diaries` ON `dia_diaries`.id = `dia_entries`.dia_diary_id WHERE (dia_diaries.base_user_id = 1 and read_flag != true and dia_entries.draft_flag != true) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `base_users` INNER JOIN `base_friends` ON `base_users`.id = `base_friends`.friend_id WHERE (((base_friends.base_user_id = 1) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:45:08') AND ((base_friends.status = 1 and base_friends.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:45:08')) [0m
+  [4;36;1mBaseFavorite Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `base_favorites`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `base_users` INNER JOIN `base_favorites` ON `base_users`.id = `base_favorites`.favorite_id WHERE (((base_favorites.base_user_id = 1) AND (base_favorites.deleted_at IS NULL OR base_favorites.deleted_at > '2009-06-04 11:45:08') AND ((base_favorites.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:45:08')) [0m
+  [4;36;1mDiaDiary Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `dia_diaries`[0m
+  [4;35;1mDiaEntry Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `dia_entries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `dia_entries` INNER JOIN `dia_diaries` ON `dia_entries`.dia_diary_id = `dia_diaries`.id WHERE (((dia_diaries.base_user_id = 1) AND (dia_diaries.deleted_at IS NULL OR dia_diaries.deleted_at > '2009-06-04 11:45:08') AND ((draft_flag = false) AND (draft_flag = false))) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:45:08')) [0m
+  [4;35;1mAbmAlbum Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `abm_albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `abm_albums` WHERE ((`abm_albums`.base_user_id = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:45:08')) [0m
+  [4;35;1mCmmCommunitiesBaseUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `cmm_communities_base_users`[0m
+  [4;36;1mCmmCommunity Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `cmm_communities`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE (((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:45:08') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:45:08')) [0m
+  [4;36;1mBaseUser Load (0.5ms)[0m   [0;1mSELECT `base_users`.* FROM `base_users` INNER JOIN `base_friends` ON `base_users`.id = `base_friends`.friend_id WHERE ((base_friends.base_user_id = 1) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:45:08') AND ((base_friends.status = 1 and base_friends.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:45:08') ORDER BY base_users.created_at desc[0m
+  [4;35;1mDiaEntry Load Including Associations (0.4ms)[0m   [0mSELECT `dia_entries`.`id` AS t0_r0, `dia_entries`.`dia_diary_id` AS t0_r1, `dia_entries`.`title` AS t0_r2, `dia_entries`.`body` AS t0_r3, `dia_entries`.`public_level` AS t0_r4, `dia_entries`.`draft_flag` AS t0_r5, `dia_entries`.`created_at` AS t0_r6, `dia_entries`.`updated_at` AS t0_r7, `dia_entries`.`deleted_at` AS t0_r8, `dia_entries`.`last_commented_at` AS t0_r9, `dia_entries`.`contributed_at` AS t0_r10, `dia_diaries`.`id` AS t1_r0, `dia_diaries`.`base_user_id` AS t1_r1, `dia_diaries`.`default_public_level` AS t1_r2, `dia_diaries`.`created_at` AS t1_r3, `dia_diaries`.`updated_at` AS t1_r4, `dia_diaries`.`deleted_at` AS t1_r5 FROM `dia_entries` LEFT OUTER JOIN `dia_diaries` ON `dia_diaries`.id = `dia_entries`.dia_diary_id WHERE (draft_flag = false and dia_diaries.base_user_id in (NULL) and public_level != 5) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:45:08') ORDER BY contributed_at desc LIMIT 3[0m
+  [4;36;1mAbmAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM `abm_albums` WHERE (base_user_id in (NULL) and public_level < 5) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:45:08') ORDER BY updated_at desc LIMIT 3[0m
+  [4;35;1mDiaEntry Load (1.1ms)[0m   [0mSELECT `dia_entries`.* FROM `dia_entries` INNER JOIN `dia_entry_comments` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id WHERE ((`dia_entry_comments`.base_user_id = 1) AND ((dia_entries.draft_flag != true))) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:45:08') GROUP BY dia_entries.id ORDER BY dia_entries.last_commented_at desc LIMIT 3[0m
+  [4;36;1mCmmCommunity Load (0.3ms)[0m   [0;1mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:45:08') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:45:08') LIMIT 3[0m
+  [4;35;1mBaseUser Load (0.4ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:45:08') [0m
+  [4;36;1mCmmCommunity Load (0.3ms)[0m   [0;1mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:45:08') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:45:08') [0m
+  [4;35;1mTpcTopicCmmCommunity Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `tpc_topic_cmm_communities`[0m
+  [4;36;1mTpcTopic Columns (12.8ms)[0m   [0;1mSHOW FIELDS FROM `tpc_topics`[0m
+  [4;35;1mTpcTopicCmmCommunity Load Including Associations (1.4ms)[0m   [0mSELECT `tpc_topic_cmm_communities`.`id` AS t0_r0, `tpc_topic_cmm_communities`.`tpc_topic_id` AS t0_r1, `tpc_topic_cmm_communities`.`cmm_community_id` AS t0_r2, `tpc_topic_cmm_communities`.`public_level` AS t0_r3, `tpc_topic_cmm_communities`.`created_at` AS t0_r4, `tpc_topic_cmm_communities`.`updated_at` AS t0_r5, `tpc_topic_cmm_communities`.`deleted_at` AS t0_r6, `tpc_topics`.`id` AS t1_r0, `tpc_topics`.`title` AS t1_r1, `tpc_topics`.`body` AS t1_r2, `tpc_topics`.`base_user_id` AS t1_r3, `tpc_topics`.`created_at` AS t1_r4, `tpc_topics`.`updated_at` AS t1_r5, `tpc_topics`.`deleted_at` AS t1_r6, `tpc_topics`.`last_commented_at` AS t1_r7, `tpc_topics`.`comment_count` AS t1_r8 FROM `tpc_topic_cmm_communities` LEFT OUTER JOIN `tpc_topics` ON `tpc_topics`.id = `tpc_topic_cmm_communities`.tpc_topic_id WHERE ((tpc_topics.created_at > '2009-05-25 11:45:08' or tpc_topics.last_commented_at > '2009-05-25 11:45:08') and cmm_community_id in (NULL)) AND (tpc_topic_cmm_communities.deleted_at IS NULL OR tpc_topic_cmm_communities.deleted_at > '2009-06-04 11:45:08') ORDER BY tpc_topics.last_commented_at desc, tpc_topics.created_at desc LIMIT 3[0m
+  [4;36;1mCmmCommunitiesBaseUser Load (0.3ms)[0m   [0;1mSELECT * FROM `cmm_communities_base_users` WHERE (base_user_id = 1 and status = 100) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:45:08') [0m
+  [4;35;1mCmmCommunitiesBaseUser Load (0.2ms)[0m   [0mSELECT * FROM `cmm_communities_base_users` WHERE (base_user_id = 1 and status in (1,2,10,20)) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:45:08') [0m
+  [4;36;1mTpcComment Load (0.4ms)[0m   [0;1mSELECT * FROM `tpc_comments` WHERE (created_at > '2009-05-25 11:45:08' and base_user_id = 1) [0m
+  [4;35;1mTpcTopicCmmCommunity Load Including Associations (2.0ms)[0m   [0mSELECT `tpc_topic_cmm_communities`.`id` AS t0_r0, `tpc_topic_cmm_communities`.`tpc_topic_id` AS t0_r1, `tpc_topic_cmm_communities`.`cmm_community_id` AS t0_r2, `tpc_topic_cmm_communities`.`public_level` AS t0_r3, `tpc_topic_cmm_communities`.`created_at` AS t0_r4, `tpc_topic_cmm_communities`.`updated_at` AS t0_r5, `tpc_topic_cmm_communities`.`deleted_at` AS t0_r6, `tpc_topics`.`id` AS t1_r0, `tpc_topics`.`title` AS t1_r1, `tpc_topics`.`body` AS t1_r2, `tpc_topics`.`base_user_id` AS t1_r3, `tpc_topics`.`created_at` AS t1_r4, `tpc_topics`.`updated_at` AS t1_r5, `tpc_topics`.`deleted_at` AS t1_r6, `tpc_topics`.`last_commented_at` AS t1_r7, `tpc_topics`.`comment_count` AS t1_r8 FROM `tpc_topic_cmm_communities` LEFT OUTER JOIN `tpc_topics` ON `tpc_topics`.id = `tpc_topic_cmm_communities`.tpc_topic_id WHERE (tpc_topic_id in (NULL) and cmm_community_id not in (-1) and (cmm_community_id in (NULL) or public_level <= 2)) AND (tpc_topic_cmm_communities.deleted_at IS NULL OR tpc_topic_cmm_communities.deleted_at > '2009-06-04 11:45:08') ORDER BY tpc_topics.last_commented_at desc LIMIT 3[0m
+  [4;36;1mBaseProfile Load (0.5ms)[0m   [0;1mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:45:08') LIMIT 1[0m
+Rendering base/portal
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:45:08') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:45:08') [0m
+Rendering nested layouts ["layouts/portal"]
+  [4;36;1mBaseUserRole Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;35;1mBaseUserRole Load (0.4ms)[0m   [0mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:45:08') LIMIT 1[0m
+Rendered common/_header_search (13.3ms)
+Rendered common/_header_menu (1.7ms)
+  [4;36;1mBaseProfile Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `base_profiles`[0m
+  [4;35;1mBaseMenu Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `base_menus`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (124.3ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_portal (157.2ms)
+  [4;35;1mPntFilter Load (0.5ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base' and action_name = 'portal' and (start_at is null or start_at < '2009-06-04 11:45:08') and (end_at is null or end_at > '2009-06-04 11:45:08')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:45:08') [0m
+Completed in 725ms (View: 159, DB: 1) | 200 OK [http://localhost/base/portal]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseUserController#logout (for 127.0.0.1 at 2009-06-04 11:45:52) [GET]
+  Parameters: {"action"=>"logout", "controller"=>"base_user"}
+controller_name base_user: action_name logout
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (1.2ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:45:53') LIMIT 1[0m
+Switching to Master
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBaseProfile Load (0.6ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:45:53') LIMIT 1[0m
+  [4;36;1mBaseProfile Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `base_profiles`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Switching to Slave
+Redirected to http://localhost:3000/
+Completed in 289ms (DB: 2) | 302 Found [http://localhost/base_user/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#index (for 127.0.0.1 at 2009-06-04 11:45:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base"}
+controller_name base: action_name index
+  [4;35;1mBaseNotice Load (0.5ms)[0m   [0mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:45:53' and end_datetime > '2009-06-04 11:45:53') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:45:53') ORDER BY start_datetime desc[0m
+==> Got DiaEntry:DiaEntry#portal_public_entries from cache. (0.00037)
+==> Got AbmAlbum:AbmAlbum#portal_public_albums from cache. (0.00031)
+==> Got CmmCommunity:CmmCommunity#portal_communities from cache. (0.00085)
+==> Got TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics from cache. (0.00037)
+Rendering base/index
+Rendering nested layouts ["layouts/portal"]
+Rendered common/_header_search (0.6ms)
+Rendered common/_header_menu (0.2ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.7ms)
+Rendered layouts/_portal (7.0ms)
+Completed in 180ms (View: 9, Memcache: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#index (for 127.0.0.1 at 2009-06-04 11:46:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base"}
+controller_name base: action_name index
+  [4;35;1mBaseNotice Load (0.4ms)[0m   [0mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:46:24' and end_datetime > '2009-06-04 11:46:24') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:46:24') ORDER BY start_datetime desc[0m
+==> Got DiaEntry:DiaEntry#portal_public_entries from cache. (0.00032)
+==> Got AbmAlbum:AbmAlbum#portal_public_albums from cache. (0.00032)
+==> Got CmmCommunity:CmmCommunity#portal_communities from cache. (0.00036)
+==> Got TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics from cache. (0.00038)
+Rendering base/index
+Rendering nested layouts ["layouts/portal"]
+Rendered common/_header_search (0.7ms)
+Rendered common/_header_menu (0.2ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_portal (11.0ms)
+Completed in 258ms (View: 16, Memcache: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#index (for 127.0.0.1 at 2009-06-04 11:47:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base"}
+controller_name base: action_name index
+  [4;35;1mBaseNotice Load (0.9ms)[0m   [0mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:47:57' and end_datetime > '2009-06-04 11:47:57') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:47:57') ORDER BY start_datetime desc[0m
+==> Got DiaEntry:DiaEntry#portal_public_entries from cache. (0.00034)
+==> Got AbmAlbum:AbmAlbum#portal_public_albums from cache. (0.00031)
+==> Got CmmCommunity:CmmCommunity#portal_communities from cache. (0.00032)
+==> Got TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics from cache. (0.00034)
+Rendering base/index
+Rendering nested layouts ["layouts/portal"]
+Rendered common/_header_search (2.0ms)
+Rendered common/_header_menu (0.4ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.7ms)
+Rendered layouts/_portal (106.8ms)
+Completed in 265ms (View: 109, Memcache: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#index (for 127.0.0.1 at 2009-06-04 11:48:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base"}
+controller_name base: action_name index
+  [4;35;1mBaseNotice Load (0.5ms)[0m   [0mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:48:21' and end_datetime > '2009-06-04 11:48:21') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:48:21') ORDER BY start_datetime desc[0m
+==> Got DiaEntry:DiaEntry#portal_public_entries from cache. (0.00035)
+==> Got AbmAlbum:AbmAlbum#portal_public_albums from cache. (0.00033)
+==> Got CmmCommunity:CmmCommunity#portal_communities from cache. (0.00032)
+==> Got TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics from cache. (0.00034)
+Rendering base/index
+Rendering nested layouts ["layouts/portal"]
+Rendered common/_header_search (1.8ms)
+Rendered common/_header_menu (0.2ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.7ms)
+Rendered layouts/_portal (10.9ms)
+Completed in 267ms (View: 13, Memcache: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseUserController#login (for 127.0.0.1 at 2009-06-04 11:48:31) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"ChEbqY1SeKFWBn9Dz5GUTiVyBIXFAVnQFj5w2VFUaEE=", "controller"=>"base_user", "login"=>"unshiu@drecom.co.jp", "password"=>"[FILTERED]"}
+controller_name base_user: action_name login
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.4ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`login` = 'unshiu@drecom.co.jp') AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:48:31') LIMIT 1[0m
+  [4;36;1mBaseCarrier Load (0.4ms)[0m   [0;1mSELECT * FROM `base_carriers` WHERE ( name = 'other' ) AND (base_carriers.deleted_at IS NULL OR base_carriers.deleted_at > '2009-06-04 11:48:31') LIMIT 1[0m
+  [4;35;1mBaseUser Load (0.3ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:48:31') [0m
+  [4;36;1mBaseCarrier Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `base_carriers`[0m
+Switching to Master
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mBaseUser Exists (0.4ms)[0m   [0;1mSELECT `base_users`.id FROM `base_users` WHERE (LOWER(`base_users`.`login`) = BINARY 'unshiu@drecom.co.jp' AND `base_users`.deleted_at IS NULL AND `base_users`.id <> 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:48:31') LIMIT 1[0m
+  [4;35;1mBaseUser Exists (0.3ms)[0m   [0mSELECT `base_users`.id FROM `base_users` WHERE (LOWER(`base_users`.`email`) = BINARY 'unshiu@drecom.co.jp' AND `base_users`.deleted_at IS NULL AND `base_users`.id <> 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:48:31') LIMIT 1[0m
+  [4;36;1mBaseProfile Load (0.5ms)[0m   [0;1mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:48:31') LIMIT 1[0m
+  [4;35;1mBaseProfile Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `base_profiles`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Switching to Slave
+Redirected to http://localhost:3000/base/portal
+  [4;35;1mPntFilter Load (0.4ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base_user' and action_name = 'login' and (start_at is null or start_at < '2009-06-04 11:48:31') and (end_at is null or end_at > '2009-06-04 11:48:31')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:48:31') [0m
+Completed in 246ms (DB: 2) | 302 Found [http://localhost/base_user/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#portal (for 127.0.0.1 at 2009-06-04 11:48:31) [GET]
+  Parameters: {"action"=>"portal", "controller"=>"base"}
+controller_name base: action_name portal
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.5ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:48:31') LIMIT 1[0m
+  [4;36;1mBaseNotice Load (0.4ms)[0m   [0;1mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:48:31' and end_datetime > '2009-06-04 11:48:31') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:48:31') ORDER BY start_datetime desc[0m
+  [4;35;1mMsgReceiver Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `msg_receivers`[0m
+  [4;36;1mMsgMessage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `msg_messages`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_receivers` ON `msg_messages`.id = `msg_receivers`.msg_message_id WHERE (((msg_receivers.base_user_id = 1) AND (msg_receivers.deleted_at IS NULL OR msg_receivers.deleted_at > '2009-06-04 11:48:31') AND (((draft_flag = false or draft_flag is null) and trash_status is null and read_flag != true))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:48:31')) [0m
+  [4;36;1mBaseFriend Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `base_friends`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `base_friends` WHERE ((`base_friends`.friend_id = 1 AND (status = 2 and base_friends.deleted_at is null)) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:48:31')) [0m
+  [4;36;1mDiaEntryComment Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `dia_entry_comments`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(DISTINCT `dia_entry_comments`.id) AS count_all FROM `dia_entry_comments` LEFT OUTER JOIN `dia_entries` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id LEFT OUTER JOIN `dia_diaries` ON `dia_diaries`.id = `dia_entries`.dia_diary_id WHERE (dia_diaries.base_user_id = 1 and read_flag != true and dia_entries.draft_flag != true) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_users` INNER JOIN `base_friends` ON `base_users`.id = `base_friends`.friend_id WHERE (((base_friends.base_user_id = 1) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:48:31') AND ((base_friends.status = 1 and base_friends.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:48:31')) [0m
+  [4;35;1mBaseFavorite Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `base_favorites`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_users` INNER JOIN `base_favorites` ON `base_users`.id = `base_favorites`.favorite_id WHERE (((base_favorites.base_user_id = 1) AND (base_favorites.deleted_at IS NULL OR base_favorites.deleted_at > '2009-06-04 11:48:31') AND ((base_favorites.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:48:31')) [0m
+  [4;35;1mDiaDiary Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `dia_diaries`[0m
+  [4;36;1mDiaEntry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `dia_entries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `dia_entries` INNER JOIN `dia_diaries` ON `dia_entries`.dia_diary_id = `dia_diaries`.id WHERE (((dia_diaries.base_user_id = 1) AND (dia_diaries.deleted_at IS NULL OR dia_diaries.deleted_at > '2009-06-04 11:48:31') AND ((draft_flag = false) AND (draft_flag = false))) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:48:31')) [0m
+  [4;36;1mAbmAlbum Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `abm_albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `abm_albums` WHERE ((`abm_albums`.base_user_id = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:48:31')) [0m
+  [4;36;1mCmmCommunitiesBaseUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `cmm_communities_base_users`[0m
+  [4;35;1mCmmCommunity Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `cmm_communities`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE (((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:48:31') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:48:31')) [0m
+  [4;35;1mBaseUser Load (0.6ms)[0m   [0mSELECT `base_users`.* FROM `base_users` INNER JOIN `base_friends` ON `base_users`.id = `base_friends`.friend_id WHERE ((base_friends.base_user_id = 1) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:48:31') AND ((base_friends.status = 1 and base_friends.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:48:31') ORDER BY base_users.created_at desc[0m
+  [4;36;1mDiaEntry Load Including Associations (0.5ms)[0m   [0;1mSELECT `dia_entries`.`id` AS t0_r0, `dia_entries`.`dia_diary_id` AS t0_r1, `dia_entries`.`title` AS t0_r2, `dia_entries`.`body` AS t0_r3, `dia_entries`.`public_level` AS t0_r4, `dia_entries`.`draft_flag` AS t0_r5, `dia_entries`.`created_at` AS t0_r6, `dia_entries`.`updated_at` AS t0_r7, `dia_entries`.`deleted_at` AS t0_r8, `dia_entries`.`last_commented_at` AS t0_r9, `dia_entries`.`contributed_at` AS t0_r10, `dia_diaries`.`id` AS t1_r0, `dia_diaries`.`base_user_id` AS t1_r1, `dia_diaries`.`default_public_level` AS t1_r2, `dia_diaries`.`created_at` AS t1_r3, `dia_diaries`.`updated_at` AS t1_r4, `dia_diaries`.`deleted_at` AS t1_r5 FROM `dia_entries` LEFT OUTER JOIN `dia_diaries` ON `dia_diaries`.id = `dia_entries`.dia_diary_id WHERE (draft_flag = false and dia_diaries.base_user_id in (NULL) and public_level != 5) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:48:31') ORDER BY contributed_at desc LIMIT 3[0m
+  [4;35;1mAbmAlbum Load (0.2ms)[0m   [0mSELECT * FROM `abm_albums` WHERE (base_user_id in (NULL) and public_level < 5) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:48:31') ORDER BY updated_at desc LIMIT 3[0m
+  [4;36;1mDiaEntry Load (1.4ms)[0m   [0;1mSELECT `dia_entries`.* FROM `dia_entries` INNER JOIN `dia_entry_comments` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id WHERE ((`dia_entry_comments`.base_user_id = 1) AND ((dia_entries.draft_flag != true))) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:48:31') GROUP BY dia_entries.id ORDER BY dia_entries.last_commented_at desc LIMIT 3[0m
+  [4;35;1mCmmCommunity Load (0.3ms)[0m   [0mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:48:31') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:48:32') LIMIT 3[0m
+  [4;36;1mBaseUser Load (0.6ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:48:32') [0m
+  [4;35;1mCmmCommunity Load (0.4ms)[0m   [0mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:48:32') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:48:32') [0m
+  [4;36;1mTpcTopicCmmCommunity Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `tpc_topic_cmm_communities`[0m
+  [4;35;1mTpcTopic Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `tpc_topics`[0m
+  [4;36;1mTpcTopicCmmCommunity Load Including Associations (1.3ms)[0m   [0;1mSELECT `tpc_topic_cmm_communities`.`id` AS t0_r0, `tpc_topic_cmm_communities`.`tpc_topic_id` AS t0_r1, `tpc_topic_cmm_communities`.`cmm_community_id` AS t0_r2, `tpc_topic_cmm_communities`.`public_level` AS t0_r3, `tpc_topic_cmm_communities`.`created_at` AS t0_r4, `tpc_topic_cmm_communities`.`updated_at` AS t0_r5, `tpc_topic_cmm_communities`.`deleted_at` AS t0_r6, `tpc_topics`.`id` AS t1_r0, `tpc_topics`.`title` AS t1_r1, `tpc_topics`.`body` AS t1_r2, `tpc_topics`.`base_user_id` AS t1_r3, `tpc_topics`.`created_at` AS t1_r4, `tpc_topics`.`updated_at` AS t1_r5, `tpc_topics`.`deleted_at` AS t1_r6, `tpc_topics`.`last_commented_at` AS t1_r7, `tpc_topics`.`comment_count` AS t1_r8 FROM `tpc_topic_cmm_communities` LEFT OUTER JOIN `tpc_topics` ON `tpc_topics`.id = `tpc_topic_cmm_communities`.tpc_topic_id WHERE ((tpc_topics.created_at > '2009-05-25 11:48:32' or tpc_topics.last_commented_at > '2009-05-25 11:48:32') and cmm_community_id in (NULL)) AND (tpc_topic_cmm_communities.deleted_at IS NULL OR tpc_topic_cmm_communities.deleted_at > '2009-06-04 11:48:32') ORDER BY tpc_topics.last_commented_at desc, tpc_topics.created_at desc LIMIT 3[0m
+  [4;35;1mCmmCommunitiesBaseUser Load (0.3ms)[0m   [0mSELECT * FROM `cmm_communities_base_users` WHERE (base_user_id = 1 and status = 100) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:48:32') [0m
+  [4;36;1mCmmCommunitiesBaseUser Load (0.3ms)[0m   [0;1mSELECT * FROM `cmm_communities_base_users` WHERE (base_user_id = 1 and status in (1,2,10,20)) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:48:32') [0m
+  [4;35;1mTpcComment Load (0.4ms)[0m   [0mSELECT * FROM `tpc_comments` WHERE (created_at > '2009-05-25 11:48:32' and base_user_id = 1) [0m
+  [4;36;1mTpcTopicCmmCommunity Load Including Associations (1.4ms)[0m   [0;1mSELECT `tpc_topic_cmm_communities`.`id` AS t0_r0, `tpc_topic_cmm_communities`.`tpc_topic_id` AS t0_r1, `tpc_topic_cmm_communities`.`cmm_community_id` AS t0_r2, `tpc_topic_cmm_communities`.`public_level` AS t0_r3, `tpc_topic_cmm_communities`.`created_at` AS t0_r4, `tpc_topic_cmm_communities`.`updated_at` AS t0_r5, `tpc_topic_cmm_communities`.`deleted_at` AS t0_r6, `tpc_topics`.`id` AS t1_r0, `tpc_topics`.`title` AS t1_r1, `tpc_topics`.`body` AS t1_r2, `tpc_topics`.`base_user_id` AS t1_r3, `tpc_topics`.`created_at` AS t1_r4, `tpc_topics`.`updated_at` AS t1_r5, `tpc_topics`.`deleted_at` AS t1_r6, `tpc_topics`.`last_commented_at` AS t1_r7, `tpc_topics`.`comment_count` AS t1_r8 FROM `tpc_topic_cmm_communities` LEFT OUTER JOIN `tpc_topics` ON `tpc_topics`.id = `tpc_topic_cmm_communities`.tpc_topic_id WHERE (tpc_topic_id in (NULL) and cmm_community_id not in (-1) and (cmm_community_id in (NULL) or public_level <= 2)) AND (tpc_topic_cmm_communities.deleted_at IS NULL OR tpc_topic_cmm_communities.deleted_at > '2009-06-04 11:48:32') ORDER BY tpc_topics.last_commented_at desc LIMIT 3[0m
+  [4;35;1mBaseProfile Load (0.5ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:48:32') LIMIT 1[0m
+Rendering base/portal
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:48:32') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:48:32') [0m
+Rendering nested layouts ["layouts/portal"]
+  [4;35;1mBaseUserRole Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;36;1mBaseUserRole Load (0.4ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:48:32') LIMIT 1[0m
+Rendered common/_header_search (11.4ms)
+Rendered common/_header_menu (0.9ms)
+  [4;35;1mBaseProfile Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `base_profiles`[0m
+  [4;36;1mBaseMenu Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `base_menus`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (19.6ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.7ms)
+Rendered layouts/_portal (46.4ms)
+  [4;36;1mPntFilter Load (0.4ms)[0m   [0;1mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base' and action_name = 'portal' and (start_at is null or start_at < '2009-06-04 11:48:32') and (end_at is null or end_at > '2009-06-04 11:48:32')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:48:32') [0m
+Completed in 686ms (View: 48, DB: 1) | 200 OK [http://localhost/base/portal]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseFavoriteController#list (for 127.0.0.1 at 2009-06-04 11:48:34) [GET]
+  Parameters: {"action"=>"list", "controller"=>"base_favorite"}
+controller_name base_favorite: action_name list
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBaseUser Columns (4.6ms)[0m   [0mSHOW FIELDS FROM `base_users`[0m
+  [4;36;1mBaseUser Load (0.7ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:48:34') LIMIT 1[0m
+  [4;35;1mBaseFavorite Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `base_favorites`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(base_users.id) AS count_base_users_id FROM `base_users` INNER JOIN `base_favorites` ON `base_users`.id = `base_favorites`.favorite_id WHERE ((base_favorites.base_user_id = 1) AND (base_favorites.deleted_at IS NULL OR base_favorites.deleted_at > '2009-06-04 11:48:34') AND ((base_favorites.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:48:34') [0m
+Rendering base_favorite/list
+Rendering nested layouts ["layouts/application"]
+  [4;35;1mBaseUserRole Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;36;1mBaseUserRole Load (3.3ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:48:34') LIMIT 1[0m
+Rendered common/_header_search (136.3ms)
+Rendered common/_header_menu (1.4ms)
+  [4;35;1mBaseProfile Load (3.4ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:48:34') LIMIT 1[0m
+Rendered common/_header_profile (28.3ms)
+  [4;36;1mBaseMenu Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `base_menus`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (17.8ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_application (201.3ms)
+  [4;36;1mPntFilter Load (0.5ms)[0m   [0;1mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base_favorite' and action_name = 'list' and (start_at is null or start_at < '2009-06-04 11:48:34') and (end_at is null or end_at > '2009-06-04 11:48:34')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:48:34') [0m
+Completed in 384ms (View: 199, DB: 7) | 200 OK [http://localhost/base_favorite/list]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseFavoriteController#list (for 127.0.0.1 at 2009-06-04 11:49:27) [GET]
+  Parameters: {"action"=>"list", "controller"=>"base_favorite"}
+controller_name base_favorite: action_name list
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBaseUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `base_users`[0m
+  [4;36;1mBaseUser Load (0.4ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:27') LIMIT 1[0m
+  [4;35;1mBaseFavorite Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `base_favorites`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(base_users.id) AS count_base_users_id FROM `base_users` INNER JOIN `base_favorites` ON `base_users`.id = `base_favorites`.favorite_id WHERE ((base_favorites.base_user_id = 1) AND (base_favorites.deleted_at IS NULL OR base_favorites.deleted_at > '2009-06-04 11:49:28') AND ((base_favorites.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:28') [0m
+Rendering base_favorite/list
+Rendering nested layouts ["layouts/application"]
+  [4;35;1mBaseUserRole Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;36;1mBaseUserRole Load (0.4ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:49:28') LIMIT 1[0m
+Rendered common/_header_search (10.2ms)
+Rendered common/_header_menu (0.9ms)
+  [4;35;1mBaseProfile Load (0.6ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:49:28') LIMIT 1[0m
+Rendered common/_header_profile (127.5ms)
+  [4;36;1mBaseMenu Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `base_menus`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (18.1ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (1.5ms)
+Rendered layouts/_application (168.9ms)
+  [4;36;1mPntFilter Load (0.5ms)[0m   [0;1mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base_favorite' and action_name = 'list' and (start_at is null or start_at < '2009-06-04 11:49:28') and (end_at is null or end_at > '2009-06-04 11:49:28')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:49:28') [0m
+Completed in 428ms (View: 172, DB: 2) | 200 OK [http://localhost/base_favorite/list]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AbmAlbumController#index (for 127.0.0.1 at 2009-06-04 11:49:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"abm_album"}
+controller_name abm_album: action_name index
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBaseUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `base_users`[0m
+  [4;36;1mBaseUser Load (0.4ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:32') LIMIT 1[0m
+  [4;35;1mAbmAlbum Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `abm_albums`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(abm_albums.id) AS count_abm_albums_id FROM `abm_albums` WHERE (`abm_albums`.base_user_id = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:49:32') [0m
+Rendering abm_album/index
+  [4;35;1mAbmAlbum Load (0.6ms)[0m   [0mSELECT * FROM `abm_albums` WHERE (`abm_albums`.base_user_id = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:49:32') ORDER BY updated_at desc LIMIT 0, 1[0m
+  [4;36;1mAbmImage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `abm_images`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `abm_images` WHERE ((`abm_images`.abm_album_id = 1) AND (abm_images.deleted_at IS NULL OR abm_images.deleted_at > '2009-06-04 11:49:32')) [0m
+Rendering nested layouts ["layouts/application"]
+  [4;36;1mBaseUserRole Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;35;1mBaseUserRole Load (0.4ms)[0m   [0mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:49:32') LIMIT 1[0m
+Rendered common/_header_search (11.3ms)
+Rendered common/_header_menu (1.0ms)
+  [4;36;1mBaseProfile Load (0.5ms)[0m   [0;1mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:49:32') LIMIT 1[0m
+Rendered common/_header_profile (21.7ms)
+  [4;35;1mBaseMenu Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `base_menus`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (17.3ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_application (61.9ms)
+  [4;35;1mPntFilter Load (0.4ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'abm_album' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:49:32') and (end_at is null or end_at > '2009-06-04 11:49:32')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:49:32') [0m
+Completed in 388ms (View: 64, DB: 2) | 200 OK [http://localhost/abm_album/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PntController#index (for 127.0.0.1 at 2009-06-04 11:49:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pnt"}
+controller_name pnt: action_name index
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.5ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:36') LIMIT 1[0m
+  [4;36;1mPntPoint Columns (26.5ms)[0m   [0;1mSHOW FIELDS FROM `pnt_points`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT sum(`pnt_points`.point) AS sum_point FROM `pnt_points` WHERE ( base_user_id = 1 ) AND (pnt_points.deleted_at IS NULL OR pnt_points.deleted_at > '2009-06-04 11:49:36') [0m
+  [4;36;1mPntPoint Load (0.2ms)[0m   [0;1mSELECT * FROM `pnt_points` WHERE ( base_user_id = 1 ) AND (pnt_points.deleted_at IS NULL OR pnt_points.deleted_at > '2009-06-04 11:49:36') [0m
+Rendering pnt/index
+Rendering nested layouts ["layouts/application"]
+  [4;35;1mBaseUserRole Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;36;1mBaseUserRole Load (0.4ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:49:36') LIMIT 1[0m
+Rendered common/_header_search (15.8ms)
+Rendered common/_header_menu (1.2ms)
+  [4;35;1mBaseProfile Load (0.5ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:49:36') LIMIT 1[0m
+Rendered common/_header_profile (20.8ms)
+  [4;36;1mBaseMenu Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `base_menus`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (16.0ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (1.2ms)
+Rendered layouts/_application (64.6ms)
+  [4;36;1mPntFilter Load (0.4ms)[0m   [0;1mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'pnt' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:49:36') and (end_at is null or end_at > '2009-06-04 11:49:36')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:49:36') [0m
+Completed in 333ms (View: 66, DB: 2) | 200 OK [http://localhost/pnt/index]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrfController#index (for 127.0.0.1 at 2009-06-04 11:49:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"prf"}
+controller_name prf: action_name index
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBaseUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `base_users`[0m
+  [4;36;1mBaseUser Load (0.5ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:40') LIMIT 1[0m
+Redirected to http://localhost:3000/prf/show/1
+  [4;35;1mPntFilter Load (0.4ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'prf' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:49:40') and (end_at is null or end_at > '2009-06-04 11:49:40')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:49:40') [0m
+Completed in 145ms (DB: 2) | 302 Found [http://localhost/prf/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrfController#show (for 127.0.0.1 at 2009-06-04 11:49:40) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"prf"}
+controller_name prf: action_name show
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.4ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:40') [0m
+  [4;36;1mDiaDiary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `dia_diaries`[0m
+  [4;35;1mDiaDiary Load (0.7ms)[0m   [0mSELECT * FROM `dia_diaries` WHERE (`dia_diaries`.`base_user_id` = 1) AND (dia_diaries.deleted_at IS NULL OR dia_diaries.deleted_at > '2009-06-04 11:49:40') LIMIT 1[0m
+  [4;36;1mBaseUser Load (0.3ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:40') LIMIT 1[0m
+  [4;35;1mDiaEntry Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `dia_entries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(dia_entries.id) AS count_dia_entries_id FROM `dia_entries` WHERE (`dia_entries`.dia_diary_id = 1 AND (draft_flag = false)) AND ((`dia_entries`.dia_diary_id = 1 AND (draft_flag = false)) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:49:41')) [0m
+  [4;35;1mBaseUser Load (0.5ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:41') [0m
+  [4;36;1mAbmAlbum Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `abm_albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(abm_albums.id) AS count_abm_albums_id FROM `abm_albums` WHERE (`abm_albums`.base_user_id = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:49:41') [0m
+  [4;36;1mPrfQuestionSet Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `prf_question_sets`[0m
+  [4;35;1mPrfQuestionSet Load (15.4ms)[0m   [0mSELECT * FROM `prf_question_sets` WHERE (`prf_question_sets`.`id` = 1) AND (prf_question_sets.deleted_at IS NULL OR prf_question_sets.deleted_at > '2009-06-04 11:49:41') [0m
+  [4;36;1mPrfProfile Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `prf_profiles`[0m
+  [4;35;1mPrfProfile Load (0.6ms)[0m   [0mSELECT * FROM `prf_profiles` WHERE (`prf_profiles`.`base_user_id` = 1) AND (prf_profiles.deleted_at IS NULL OR prf_profiles.deleted_at > '2009-06-04 11:49:41') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:41') [0m
+Switching to Master
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPrfProfile Create (0.2ms)[0m   [0;1mINSERT INTO `prf_profiles` (`created_at`, `updated_at`, `deleted_at`, `base_user_id`, `public_level`, `prf_image_id`) VALUES('2009-06-04 11:49:41', '2009-06-04 11:49:41', NULL, 1, 5, NULL)[0m
+  [4;35;1mPrfQuestionSet Load (0.3ms)[0m   [0mSELECT * FROM `prf_question_sets` WHERE (`prf_question_sets`.`id` = 1) AND (prf_question_sets.deleted_at IS NULL OR prf_question_sets.deleted_at > '2009-06-04 11:49:41') [0m
+  [4;36;1mPrfQuestionSetPartial Load (12.6ms)[0m   [0;1mSELECT * FROM `prf_question_set_partials` WHERE (`prf_question_set_partials`.prf_question_set_id = 1) AND (prf_question_set_partials.deleted_at IS NULL OR prf_question_set_partials.deleted_at > '2009-06-04 11:49:41') ORDER BY order_num[0m
+  [4;35;1mBaseUser Load (0.4ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:41') [0m
+PrfProfile [#1] Adding to index (0.065617)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Switching to Slave
+Rendering prf/show
+  [4;35;1mPrfProfile Load (0.4ms)[0m   [0mSELECT * FROM `prf_profiles` WHERE (`prf_profiles`.base_user_id = 1) AND (prf_profiles.deleted_at IS NULL OR prf_profiles.deleted_at > '2009-06-04 11:49:41') LIMIT 1[0m
+  [4;36;1mPrfImage Load (15.5ms)[0m   [0;1mSELECT * FROM `prf_images` WHERE (`prf_images`.prf_profile_id = 1) AND (prf_images.deleted_at IS NULL OR prf_images.deleted_at > '2009-06-04 11:49:41') LIMIT 1[0m
+  [4;35;1mPrfQuestionSetPartial Load (0.4ms)[0m   [0mSELECT * FROM `prf_question_set_partials` WHERE (`prf_question_set_partials`.prf_question_set_id = 1) AND (prf_question_set_partials.deleted_at IS NULL OR prf_question_set_partials.deleted_at > '2009-06-04 11:49:41') ORDER BY order_num[0m
+  [4;36;1mBaseFriend Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `base_friends`[0m
+  [4;35;1mBaseUser Load (0.8ms)[0m   [0mSELECT `base_users`.* FROM `base_users` INNER JOIN `base_friends` ON `base_users`.id = `base_friends`.friend_id WHERE ((base_friends.base_user_id = 1) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:49:41') AND ((base_friends.status = 1 and base_friends.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:41') ORDER BY base_users.created_at desc[0m
+  [4;36;1mCmmCommunitiesBaseUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `cmm_communities_base_users`[0m
+  [4;35;1mCmmCommunity Load (0.5ms)[0m   [0mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:49:41') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:49:41') [0m
+Rendering nested layouts ["layouts/application"]
+  [4;36;1mBaseUserRole Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;35;1mBaseUserRole Load (3.0ms)[0m   [0mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:49:41') LIMIT 1[0m
+Rendered common/_header_search (17.3ms)
+Rendered common/_header_menu (1.2ms)
+  [4;36;1mBaseMenu Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `base_menus`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (24.6ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (1.0ms)
+Rendered layouts/_application (53.0ms)
+  [4;36;1mPntFilter Load (3.6ms)[0m   [0;1mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'prf' and action_name = 'show' and (start_at is null or start_at < '2009-06-04 11:49:41') and (end_at is null or end_at > '2009-06-04 11:49:41')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:49:41') [0m
+Completed in 630ms (View: 52, DB: 7) | 200 OK [http://localhost/prf/show/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DiaEntryController#list (for 127.0.0.1 at 2009-06-04 11:49:43) [GET]
+  Parameters: {"action"=>"list", "controller"=>"dia_entry"}
+controller_name dia_entry: action_name list
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBaseUser Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `base_users`[0m
+  [4;36;1mBaseUser Load (0.4ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:43') LIMIT 1[0m
+  [4;35;1mDiaDiary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `dia_diaries`[0m
+  [4;36;1mDiaDiary Load (0.3ms)[0m   [0;1mSELECT * FROM `dia_diaries` WHERE (`dia_diaries`.`base_user_id` = 1) AND (dia_diaries.deleted_at IS NULL OR dia_diaries.deleted_at > '2009-06-04 11:49:43') LIMIT 1[0m
+  [4;35;1mDiaEntry Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `dia_entries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(dia_entries.id) AS count_dia_entries_id FROM `dia_entries` WHERE (`dia_entries`.dia_diary_id = 1 AND (draft_flag = false)) AND ((`dia_entries`.dia_diary_id = 1 AND (draft_flag = false)) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:49:43')) [0m
+  [4;35;1mDiaEntry Load (0.3ms)[0m   [0mSELECT * FROM `dia_entries` WHERE (`dia_entries`.dia_diary_id = 1 AND (draft_flag = false)) AND ((`dia_entries`.dia_diary_id = 1 AND (draft_flag = false)) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:49:43')) ORDER BY created_at desc LIMIT 5[0m
+  [4;36;1mDiaEntryComment Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `dia_entry_comments`[0m
+  [4;35;1mDiaEntryComment Load Including Associations (0.4ms)[0m   [0mSELECT `dia_entry_comments`.`id` AS t0_r0, `dia_entry_comments`.`base_user_id` AS t0_r1, `dia_entry_comments`.`dia_entry_id` AS t0_r2, `dia_entry_comments`.`body` AS t0_r3, `dia_entry_comments`.`created_at` AS t0_r4, `dia_entry_comments`.`updated_at` AS t0_r5, `dia_entry_comments`.`read_flag` AS t0_r6, `dia_entry_comments`.`invisibled_by` AS t0_r7, `dia_entries`.`id` AS t1_r0, `dia_entries`.`dia_diary_id` AS t1_r1, `dia_entries`.`title` AS t1_r2, `dia_entries`.`body` AS t1_r3, `dia_entries`.`public_level` AS t1_r4, `dia_entries`.`draft_flag` AS t1_r5, `dia_entries`.`created_at` AS t1_r6, `dia_entries`.`updated_at` AS t1_r7, `dia_entries`.`deleted_at` AS t1_r8, `dia_entries`.`last_commented_at` AS t1_r9, `dia_entries`.`contributed_at` AS t1_r10 FROM `dia_entry_comments` LEFT OUTER JOIN `dia_entries` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id WHERE (dia_entries.dia_diary_id = 1) ORDER BY dia_entry_comments.created_at desc LIMIT 5[0m
+Rendering dia_entry/list
+  [4;36;1mBaseUser Load (0.5ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:44') [0m
+Rendering nested layouts ["layouts/application"]
+  [4;35;1mBaseUserRole Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;36;1mBaseUserRole Load (0.4ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:49:44') LIMIT 1[0m
+Rendered common/_header_search (11.3ms)
+Rendered common/_header_menu (0.9ms)
+  [4;35;1mBaseProfile Load (0.5ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:49:44') LIMIT 1[0m
+Rendered common/_header_profile (21.3ms)
+  [4;36;1mBaseMenu Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `base_menus`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (17.3ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.7ms)
+Rendered layouts/_application (60.3ms)
+  [4;36;1mPntFilter Load (0.5ms)[0m   [0;1mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'dia_entry' and action_name = 'list' and (start_at is null or start_at < '2009-06-04 11:49:44') and (end_at is null or end_at > '2009-06-04 11:49:44')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:49:44') [0m
+Completed in 340ms (View: 62, DB: 2) | 200 OK [http://localhost/dia_entry/list]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#portal (for 127.0.0.1 at 2009-06-04 11:49:48) [GET]
+  Parameters: {"action"=>"portal", "controller"=>"base"}
+controller_name base: action_name portal
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBaseUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `base_users`[0m
+  [4;36;1mBaseUser Load (0.4ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:48') LIMIT 1[0m
+  [4;35;1mBaseNotice Load (0.5ms)[0m   [0mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:49:48' and end_datetime > '2009-06-04 11:49:48') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:49:48') ORDER BY start_datetime desc[0m
+  [4;36;1mMsgReceiver Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `msg_receivers`[0m
+  [4;35;1mMsgMessage Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `msg_messages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_receivers` ON `msg_messages`.id = `msg_receivers`.msg_message_id WHERE (((msg_receivers.base_user_id = 1) AND (msg_receivers.deleted_at IS NULL OR msg_receivers.deleted_at > '2009-06-04 11:49:48') AND (((draft_flag = false or draft_flag is null) and trash_status is null and read_flag != true))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:49:48')) [0m
+  [4;35;1mBaseFriend Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `base_friends`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_friends` WHERE ((`base_friends`.friend_id = 1 AND (status = 2 and base_friends.deleted_at is null)) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:49:48')) [0m
+  [4;35;1mDiaEntryComment Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `dia_entry_comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(DISTINCT `dia_entry_comments`.id) AS count_all FROM `dia_entry_comments` LEFT OUTER JOIN `dia_entries` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id LEFT OUTER JOIN `dia_diaries` ON `dia_diaries`.id = `dia_entries`.dia_diary_id WHERE (dia_diaries.base_user_id = 1 and read_flag != true and dia_entries.draft_flag != true) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `base_users` INNER JOIN `base_friends` ON `base_users`.id = `base_friends`.friend_id WHERE (((base_friends.base_user_id = 1) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:49:48') AND ((base_friends.status = 1 and base_friends.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:48')) [0m
+  [4;36;1mBaseFavorite Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `base_favorites`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `base_users` INNER JOIN `base_favorites` ON `base_users`.id = `base_favorites`.favorite_id WHERE (((base_favorites.base_user_id = 1) AND (base_favorites.deleted_at IS NULL OR base_favorites.deleted_at > '2009-06-04 11:49:48') AND ((base_favorites.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:48')) [0m
+  [4;36;1mDiaDiary Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `dia_diaries`[0m
+  [4;35;1mDiaEntry Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `dia_entries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `dia_entries` INNER JOIN `dia_diaries` ON `dia_entries`.dia_diary_id = `dia_diaries`.id WHERE (((dia_diaries.base_user_id = 1) AND (dia_diaries.deleted_at IS NULL OR dia_diaries.deleted_at > '2009-06-04 11:49:48') AND ((draft_flag = false) AND (draft_flag = false))) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:49:48')) [0m
+  [4;35;1mAbmAlbum Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `abm_albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `abm_albums` WHERE ((`abm_albums`.base_user_id = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:49:48')) [0m
+  [4;35;1mCmmCommunitiesBaseUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `cmm_communities_base_users`[0m
+  [4;36;1mCmmCommunity Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `cmm_communities`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE (((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:49:48') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:49:48')) [0m
+  [4;36;1mBaseUser Load (0.6ms)[0m   [0;1mSELECT `base_users`.* FROM `base_users` INNER JOIN `base_friends` ON `base_users`.id = `base_friends`.friend_id WHERE ((base_friends.base_user_id = 1) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:49:48') AND ((base_friends.status = 1 and base_friends.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:48') ORDER BY base_users.created_at desc[0m
+  [4;35;1mDiaEntry Load Including Associations (0.4ms)[0m   [0mSELECT `dia_entries`.`id` AS t0_r0, `dia_entries`.`dia_diary_id` AS t0_r1, `dia_entries`.`title` AS t0_r2, `dia_entries`.`body` AS t0_r3, `dia_entries`.`public_level` AS t0_r4, `dia_entries`.`draft_flag` AS t0_r5, `dia_entries`.`created_at` AS t0_r6, `dia_entries`.`updated_at` AS t0_r7, `dia_entries`.`deleted_at` AS t0_r8, `dia_entries`.`last_commented_at` AS t0_r9, `dia_entries`.`contributed_at` AS t0_r10, `dia_diaries`.`id` AS t1_r0, `dia_diaries`.`base_user_id` AS t1_r1, `dia_diaries`.`default_public_level` AS t1_r2, `dia_diaries`.`created_at` AS t1_r3, `dia_diaries`.`updated_at` AS t1_r4, `dia_diaries`.`deleted_at` AS t1_r5 FROM `dia_entries` LEFT OUTER JOIN `dia_diaries` ON `dia_diaries`.id = `dia_entries`.dia_diary_id WHERE (draft_flag = false and dia_diaries.base_user_id in (NULL) and public_level != 5) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:49:48') ORDER BY contributed_at desc LIMIT 3[0m
+  [4;36;1mAbmAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM `abm_albums` WHERE (base_user_id in (NULL) and public_level < 5) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:49:48') ORDER BY updated_at desc LIMIT 3[0m
+  [4;35;1mDiaEntry Load (1.2ms)[0m   [0mSELECT `dia_entries`.* FROM `dia_entries` INNER JOIN `dia_entry_comments` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id WHERE ((`dia_entry_comments`.base_user_id = 1) AND ((dia_entries.draft_flag != true))) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:49:48') GROUP BY dia_entries.id ORDER BY dia_entries.last_commented_at desc LIMIT 3[0m
+  [4;36;1mCmmCommunity Load (0.3ms)[0m   [0;1mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:49:48') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:49:48') LIMIT 3[0m
+  [4;35;1mBaseUser Load (0.5ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:49') [0m
+  [4;36;1mCmmCommunity Load (0.4ms)[0m   [0;1mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:49:49') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:49:49') [0m
+  [4;35;1mTpcTopicCmmCommunity Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `tpc_topic_cmm_communities`[0m
+  [4;36;1mTpcTopic Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `tpc_topics`[0m
+  [4;35;1mTpcTopicCmmCommunity Load Including Associations (1.4ms)[0m   [0mSELECT `tpc_topic_cmm_communities`.`id` AS t0_r0, `tpc_topic_cmm_communities`.`tpc_topic_id` AS t0_r1, `tpc_topic_cmm_communities`.`cmm_community_id` AS t0_r2, `tpc_topic_cmm_communities`.`public_level` AS t0_r3, `tpc_topic_cmm_communities`.`created_at` AS t0_r4, `tpc_topic_cmm_communities`.`updated_at` AS t0_r5, `tpc_topic_cmm_communities`.`deleted_at` AS t0_r6, `tpc_topics`.`id` AS t1_r0, `tpc_topics`.`title` AS t1_r1, `tpc_topics`.`body` AS t1_r2, `tpc_topics`.`base_user_id` AS t1_r3, `tpc_topics`.`created_at` AS t1_r4, `tpc_topics`.`updated_at` AS t1_r5, `tpc_topics`.`deleted_at` AS t1_r6, `tpc_topics`.`last_commented_at` AS t1_r7, `tpc_topics`.`comment_count` AS t1_r8 FROM `tpc_topic_cmm_communities` LEFT OUTER JOIN `tpc_topics` ON `tpc_topics`.id = `tpc_topic_cmm_communities`.tpc_topic_id WHERE ((tpc_topics.created_at > '2009-05-25 11:49:49' or tpc_topics.last_commented_at > '2009-05-25 11:49:49') and cmm_community_id in (NULL)) AND (tpc_topic_cmm_communities.deleted_at IS NULL OR tpc_topic_cmm_communities.deleted_at > '2009-06-04 11:49:49') ORDER BY tpc_topics.last_commented_at desc, tpc_topics.created_at desc LIMIT 3[0m
+  [4;36;1mCmmCommunitiesBaseUser Load (0.3ms)[0m   [0;1mSELECT * FROM `cmm_communities_base_users` WHERE (base_user_id = 1 and status = 100) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:49:49') [0m
+  [4;35;1mCmmCommunitiesBaseUser Load (0.2ms)[0m   [0mSELECT * FROM `cmm_communities_base_users` WHERE (base_user_id = 1 and status in (1,2,10,20)) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:49:49') [0m
+  [4;36;1mTpcComment Load (0.4ms)[0m   [0;1mSELECT * FROM `tpc_comments` WHERE (created_at > '2009-05-25 11:49:49' and base_user_id = 1) [0m
+  [4;35;1mTpcTopicCmmCommunity Load Including Associations (1.3ms)[0m   [0mSELECT `tpc_topic_cmm_communities`.`id` AS t0_r0, `tpc_topic_cmm_communities`.`tpc_topic_id` AS t0_r1, `tpc_topic_cmm_communities`.`cmm_community_id` AS t0_r2, `tpc_topic_cmm_communities`.`public_level` AS t0_r3, `tpc_topic_cmm_communities`.`created_at` AS t0_r4, `tpc_topic_cmm_communities`.`updated_at` AS t0_r5, `tpc_topic_cmm_communities`.`deleted_at` AS t0_r6, `tpc_topics`.`id` AS t1_r0, `tpc_topics`.`title` AS t1_r1, `tpc_topics`.`body` AS t1_r2, `tpc_topics`.`base_user_id` AS t1_r3, `tpc_topics`.`created_at` AS t1_r4, `tpc_topics`.`updated_at` AS t1_r5, `tpc_topics`.`deleted_at` AS t1_r6, `tpc_topics`.`last_commented_at` AS t1_r7, `tpc_topics`.`comment_count` AS t1_r8 FROM `tpc_topic_cmm_communities` LEFT OUTER JOIN `tpc_topics` ON `tpc_topics`.id = `tpc_topic_cmm_communities`.tpc_topic_id WHERE (tpc_topic_id in (NULL) and cmm_community_id not in (-1) and (cmm_community_id in (NULL) or public_level <= 2)) AND (tpc_topic_cmm_communities.deleted_at IS NULL OR tpc_topic_cmm_communities.deleted_at > '2009-06-04 11:49:49') ORDER BY tpc_topics.last_commented_at desc LIMIT 3[0m
+  [4;36;1mBaseProfile Load (0.8ms)[0m   [0;1mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:49:49') LIMIT 1[0m
+Rendering base/portal
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:49:49') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:49:49') [0m
+Rendering nested layouts ["layouts/portal"]
+  [4;36;1mBaseUserRole Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;35;1mBaseUserRole Load (0.4ms)[0m   [0mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:49:49') LIMIT 1[0m
+Rendered common/_header_search (10.7ms)
+Rendered common/_header_menu (1.0ms)
+  [4;36;1mBaseProfile Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `base_profiles`[0m
+  [4;35;1mBaseMenu Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `base_menus`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (15.6ms)
+Rendered common/_flash_info (0.2ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_portal (44.0ms)
+  [4;35;1mPntFilter Load (0.4ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base' and action_name = 'portal' and (start_at is null or start_at < '2009-06-04 11:49:49') and (end_at is null or end_at > '2009-06-04 11:49:49')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:49:49') [0m
+Completed in 583ms (View: 46, DB: 1) | 200 OK [http://localhost/base/portal]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MsgMessageController#index (for 127.0.0.1 at 2009-06-04 11:49:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"msg_message"}
+controller_name msg_message: action_name index
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.7ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:49:51') LIMIT 1[0m
+  [4;36;1mMsgReceiver Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `msg_receivers`[0m
+  [4;35;1mMsgMessage Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `msg_messages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(msg_messages.id) AS count_msg_messages_id FROM `msg_messages` INNER JOIN `msg_receivers` ON `msg_messages`.id = `msg_receivers`.msg_message_id WHERE ((msg_receivers.base_user_id = 1) AND (msg_receivers.deleted_at IS NULL OR msg_receivers.deleted_at > '2009-06-04 11:49:51') AND (((draft_flag = false or draft_flag is null) and trash_status is null))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:49:51') [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_receivers` ON `msg_messages`.id = `msg_receivers`.msg_message_id WHERE (((msg_receivers.base_user_id = 1) AND (msg_receivers.deleted_at IS NULL OR msg_receivers.deleted_at > '2009-06-04 11:49:51') AND (((draft_flag = false or draft_flag is null) and trash_status is null))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:49:51')) [0m
+  [4;36;1mMsgSender Columns (21.5ms)[0m   [0;1mSHOW FIELDS FROM `msg_senders`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_senders` ON `msg_messages`.id = `msg_senders`.msg_message_id WHERE (((msg_senders.base_user_id = 1) AND (msg_senders.deleted_at IS NULL OR msg_senders.deleted_at > '2009-06-04 11:49:51') AND (((draft_flag = false or draft_flag is null) and trash_status is null))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:49:51')) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_senders` ON `msg_messages`.id = `msg_senders`.msg_message_id WHERE (((msg_senders.base_user_id = 1) AND (msg_senders.deleted_at IS NULL OR msg_senders.deleted_at > '2009-06-04 11:49:51') AND ((draft_flag = true and trash_status is null))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:49:51')) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(DISTINCT `msg_messages`.id) AS count_all FROM `msg_messages` LEFT OUTER JOIN `msg_senders` ON msg_senders.msg_message_id = msg_messages.id LEFT OUTER JOIN `msg_receivers` ON msg_receivers.msg_message_id = msg_messages.id WHERE ((msg_senders.base_user_id = 1 and msg_senders.trash_status = 1) or (msg_receivers.base_user_id = 1 and msg_receivers.trash_status = 1)) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:49:51') [0m
+Rendering msg_message/index
+Rendered msg/_message_sidemenu (3.1ms)
+Rendered msg/_message_menu (4.6ms)
+Rendering nested layouts ["layouts/msg_application"]
+  [4;36;1mBaseUserRole Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;35;1mBaseUserRole Load (0.4ms)[0m   [0mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:49:51') LIMIT 1[0m
+Rendered common/_header_search (10.7ms)
+Rendered common/_header_menu (0.9ms)
+  [4;36;1mBaseProfile Load (0.5ms)[0m   [0;1mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:49:51') LIMIT 1[0m
+Rendered common/_header_profile (19.9ms)
+  [4;35;1mBaseMenu Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `base_menus`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (14.6ms)
+Rendered common/_flash_info (0.1ms)
+Rendered layouts/_msg_application (57.8ms)
+  [4;35;1mPntFilter Load (0.4ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'msg_message' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:49:51') and (end_at is null or end_at > '2009-06-04 11:49:51')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:49:51') [0m
+Completed in 509ms (View: 61, DB: 2) | 200 OK [http://localhost/msg_message]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DiaEntryController#list (for 127.0.0.1 at 2009-06-04 11:50:00) [GET]
+  Parameters: {"action"=>"list", "controller"=>"dia_entry"}
+controller_name dia_entry: action_name list
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.4ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:50:00') LIMIT 1[0m
+  [4;36;1mDiaDiary Columns (6.6ms)[0m   [0;1mSHOW FIELDS FROM `dia_diaries`[0m
+  [4;35;1mDiaDiary Load (0.8ms)[0m   [0mSELECT * FROM `dia_diaries` WHERE (`dia_diaries`.`base_user_id` = 1) AND (dia_diaries.deleted_at IS NULL OR dia_diaries.deleted_at > '2009-06-04 11:50:00') LIMIT 1[0m
+  [4;36;1mDiaEntry Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `dia_entries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(dia_entries.id) AS count_dia_entries_id FROM `dia_entries` WHERE (`dia_entries`.dia_diary_id = 1 AND (draft_flag = false)) AND ((`dia_entries`.dia_diary_id = 1 AND (draft_flag = false)) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:50:00')) [0m
+  [4;36;1mDiaEntry Load (0.3ms)[0m   [0;1mSELECT * FROM `dia_entries` WHERE (`dia_entries`.dia_diary_id = 1 AND (draft_flag = false)) AND ((`dia_entries`.dia_diary_id = 1 AND (draft_flag = false)) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:50:00')) ORDER BY created_at desc LIMIT 5[0m
+  [4;35;1mDiaEntryComment Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `dia_entry_comments`[0m
+  [4;36;1mDiaEntryComment Load Including Associations (0.5ms)[0m   [0;1mSELECT `dia_entry_comments`.`id` AS t0_r0, `dia_entry_comments`.`base_user_id` AS t0_r1, `dia_entry_comments`.`dia_entry_id` AS t0_r2, `dia_entry_comments`.`body` AS t0_r3, `dia_entry_comments`.`created_at` AS t0_r4, `dia_entry_comments`.`updated_at` AS t0_r5, `dia_entry_comments`.`read_flag` AS t0_r6, `dia_entry_comments`.`invisibled_by` AS t0_r7, `dia_entries`.`id` AS t1_r0, `dia_entries`.`dia_diary_id` AS t1_r1, `dia_entries`.`title` AS t1_r2, `dia_entries`.`body` AS t1_r3, `dia_entries`.`public_level` AS t1_r4, `dia_entries`.`draft_flag` AS t1_r5, `dia_entries`.`created_at` AS t1_r6, `dia_entries`.`updated_at` AS t1_r7, `dia_entries`.`deleted_at` AS t1_r8, `dia_entries`.`last_commented_at` AS t1_r9, `dia_entries`.`contributed_at` AS t1_r10 FROM `dia_entry_comments` LEFT OUTER JOIN `dia_entries` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id WHERE (dia_entries.dia_diary_id = 1) ORDER BY dia_entry_comments.created_at desc LIMIT 5[0m
+Rendering dia_entry/list
+  [4;35;1mBaseUser Load (0.4ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:50:00') [0m
+Rendering nested layouts ["layouts/application"]
+  [4;36;1mBaseUserRole Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;35;1mBaseUserRole Load (0.3ms)[0m   [0mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:50:00') LIMIT 1[0m
+Rendered common/_header_search (10.2ms)
+Rendered common/_header_menu (0.9ms)
+  [4;36;1mBaseProfile Load (0.5ms)[0m   [0;1mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:50:01') LIMIT 1[0m
+Rendered common/_header_profile (118.1ms)
+  [4;35;1mBaseMenu Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `base_menus`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (17.2ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_application (155.7ms)
+  [4;35;1mPntFilter Load (0.5ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'dia_entry' and action_name = 'list' and (start_at is null or start_at < '2009-06-04 11:50:01') and (end_at is null or end_at > '2009-06-04 11:50:01')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:50:01') [0m
+Completed in 494ms (View: 157, DB: 2) | 200 OK [http://localhost/dia_entry/list]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseUserConfigController#index (for 127.0.0.1 at 2009-06-04 11:50:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base_user_config"}
+controller_name base_user_config: action_name index
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.5ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:50:05') LIMIT 1[0m
+  [4;36;1mDiaDiary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `dia_diaries`[0m
+  [4;35;1mDiaDiary Load (0.3ms)[0m   [0mSELECT * FROM `dia_diaries` WHERE (`dia_diaries`.`base_user_id` = 1) AND (dia_diaries.deleted_at IS NULL OR dia_diaries.deleted_at > '2009-06-04 11:50:05') LIMIT 1[0m
+Rendering base_user_config/index
+  [4;36;1mBaseUserRole Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;35;1mBaseUserRole Load (0.4ms)[0m   [0mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:50:05') LIMIT 1[0m
+Rendering nested layouts ["layouts/application"]
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:50:05') LIMIT 1[0m
+Rendered common/_header_search (2.2ms)
+Rendered common/_header_menu (0.9ms)
+  [4;35;1mBaseProfile Load (1.0ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:50:05') LIMIT 1[0m
+Rendered common/_header_profile (22.3ms)
+  [4;36;1mBaseMenu Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `base_menus`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (15.5ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_application (50.9ms)
+  [4;36;1mPntFilter Load (0.4ms)[0m   [0;1mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base_user_config' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:50:05') and (end_at is null or end_at > '2009-06-04 11:50:05')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:50:05') [0m
+Completed in 461ms (View: 52, DB: 2) | 200 OK [http://localhost/base_user_config]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseUserConfigController#index (for 127.0.0.1 at 2009-06-04 11:50:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base_user_config"}
+controller_name base_user_config: action_name index
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBaseUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `base_users`[0m
+  [4;36;1mBaseUser Load (0.4ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:50:44') LIMIT 1[0m
+  [4;35;1mDiaDiary Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `dia_diaries`[0m
+  [4;36;1mDiaDiary Load (0.3ms)[0m   [0;1mSELECT * FROM `dia_diaries` WHERE (`dia_diaries`.`base_user_id` = 1) AND (dia_diaries.deleted_at IS NULL OR dia_diaries.deleted_at > '2009-06-04 11:50:44') LIMIT 1[0m
+Rendering base_user_config/index
+  [4;35;1mBaseUserRole Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;36;1mBaseUserRole Load (0.4ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:50:44') LIMIT 1[0m
+Rendering nested layouts ["layouts/application"]
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:50:44') LIMIT 1[0m
+Rendered common/_header_search (2.2ms)
+Rendered common/_header_menu (0.9ms)
+  [4;36;1mBaseProfile Load (0.6ms)[0m   [0;1mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:50:44') LIMIT 1[0m
+Rendered common/_header_profile (23.8ms)
+  [4;35;1mBaseMenu Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `base_menus`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (14.6ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.7ms)
+Rendered layouts/_application (51.1ms)
+  [4;35;1mPntFilter Load (0.4ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base_user_config' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:50:44') and (end_at is null or end_at > '2009-06-04 11:50:44')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:50:44') [0m
+Completed in 342ms (View: 53, DB: 1) | 200 OK [http://localhost/base_user_config]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseUserConfigController#index (for 127.0.0.1 at 2009-06-04 11:51:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base_user_config"}
+controller_name base_user_config: action_name index
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.4ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:01') LIMIT 1[0m
+  [4;36;1mDiaDiary Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `dia_diaries`[0m
+  [4;35;1mDiaDiary Load (0.3ms)[0m   [0mSELECT * FROM `dia_diaries` WHERE (`dia_diaries`.`base_user_id` = 1) AND (dia_diaries.deleted_at IS NULL OR dia_diaries.deleted_at > '2009-06-04 11:51:01') LIMIT 1[0m
+Rendering base_user_config/index
+  [4;36;1mBaseUserRole Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;35;1mBaseUserRole Load (0.4ms)[0m   [0mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:51:01') LIMIT 1[0m
+Rendering nested layouts ["layouts/application"]
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:51:01') LIMIT 1[0m
+Rendered common/_header_search (2.3ms)
+Rendered common/_header_menu (0.9ms)
+  [4;35;1mBaseProfile Load (0.5ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:51:01') LIMIT 1[0m
+Rendered common/_header_profile (24.3ms)
+  [4;36;1mBaseMenu Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `base_menus`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (18.1ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_application (59.5ms)
+  [4;36;1mPntFilter Load (0.5ms)[0m   [0;1mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base_user_config' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:51:01') and (end_at is null or end_at > '2009-06-04 11:51:01')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:51:01') [0m
+Completed in 463ms (View: 65, DB: 1) | 200 OK [http://localhost/base_user_config]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#index (for 127.0.0.1 at 2009-06-04 11:51:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base"}
+controller_name base: action_name index
+  [4;36;1mBaseNotice Load (0.5ms)[0m   [0;1mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:51:04' and end_datetime > '2009-06-04 11:51:04') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:51:04') ORDER BY start_datetime desc[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.5ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:04') LIMIT 1[0m
+  [4;36;1mMsgReceiver Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `msg_receivers`[0m
+  [4;35;1mMsgMessage Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `msg_messages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_receivers` ON `msg_messages`.id = `msg_receivers`.msg_message_id WHERE (((msg_receivers.base_user_id = 1) AND (msg_receivers.deleted_at IS NULL OR msg_receivers.deleted_at > '2009-06-04 11:51:04') AND (((draft_flag = false or draft_flag is null) and trash_status is null and read_flag != true))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:51:04')) [0m
+  [4;35;1mBaseFriend Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `base_friends`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_friends` WHERE ((`base_friends`.friend_id = 1 AND (status = 2 and base_friends.deleted_at is null)) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:51:04')) [0m
+  [4;35;1mDiaEntryComment Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `dia_entry_comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(DISTINCT `dia_entry_comments`.id) AS count_all FROM `dia_entry_comments` LEFT OUTER JOIN `dia_entries` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id LEFT OUTER JOIN `dia_diaries` ON `dia_diaries`.id = `dia_entries`.dia_diary_id WHERE (dia_diaries.base_user_id = 1 and read_flag != true and dia_entries.draft_flag != true) [0m
+==> Got DiaEntry:DiaEntry#portal_public_entries from cache. (0.00029)
+==> Got AbmAlbum:AbmAlbum#portal_public_albums from cache. (0.00049)
+==> Got CmmCommunity:CmmCommunity#portal_communities from cache. (0.00042)
+==> Got TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics from cache. (0.00070)
+Rendering base/index
+Rendering nested layouts ["layouts/portal"]
+  [4;35;1mBaseUserRole Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;36;1mBaseUserRole Load (0.4ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:51:04') LIMIT 1[0m
+Rendered common/_header_search (14.5ms)
+Rendered common/_header_menu (1.0ms)
+  [4;35;1mBaseProfile Load (0.5ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:51:04') LIMIT 1[0m
+  [4;36;1mBaseProfile Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `base_profiles`[0m
+  [4;35;1mBaseMenu Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `base_menus`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (20.3ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.9ms)
+Rendered layouts/_portal (72.4ms)
+  [4;35;1mPntFilter Load (0.4ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:51:04') and (end_at is null or end_at > '2009-06-04 11:51:04')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:51:04') [0m
+Completed in 538ms (View: 74, Memcache: 2, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#portal (for 127.0.0.1 at 2009-06-04 11:51:06) [GET]
+  Parameters: {"action"=>"portal", "controller"=>"base"}
+controller_name base: action_name portal
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.5ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:06') LIMIT 1[0m
+  [4;36;1mBaseNotice Load (0.5ms)[0m   [0;1mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:51:06' and end_datetime > '2009-06-04 11:51:06') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:51:06') ORDER BY start_datetime desc[0m
+  [4;35;1mMsgReceiver Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `msg_receivers`[0m
+  [4;36;1mMsgMessage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `msg_messages`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_receivers` ON `msg_messages`.id = `msg_receivers`.msg_message_id WHERE (((msg_receivers.base_user_id = 1) AND (msg_receivers.deleted_at IS NULL OR msg_receivers.deleted_at > '2009-06-04 11:51:06') AND (((draft_flag = false or draft_flag is null) and trash_status is null and read_flag != true))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:51:06')) [0m
+  [4;36;1mBaseFriend Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `base_friends`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `base_friends` WHERE ((`base_friends`.friend_id = 1 AND (status = 2 and base_friends.deleted_at is null)) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:51:06')) [0m
+  [4;36;1mDiaEntryComment Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `dia_entry_comments`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(DISTINCT `dia_entry_comments`.id) AS count_all FROM `dia_entry_comments` LEFT OUTER JOIN `dia_entries` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id LEFT OUTER JOIN `dia_diaries` ON `dia_diaries`.id = `dia_entries`.dia_diary_id WHERE (dia_diaries.base_user_id = 1 and read_flag != true and dia_entries.draft_flag != true) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_users` INNER JOIN `base_friends` ON `base_users`.id = `base_friends`.friend_id WHERE (((base_friends.base_user_id = 1) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:51:06') AND ((base_friends.status = 1 and base_friends.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:06')) [0m
+  [4;35;1mBaseFavorite Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `base_favorites`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_users` INNER JOIN `base_favorites` ON `base_users`.id = `base_favorites`.favorite_id WHERE (((base_favorites.base_user_id = 1) AND (base_favorites.deleted_at IS NULL OR base_favorites.deleted_at > '2009-06-04 11:51:06') AND ((base_favorites.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:06')) [0m
+  [4;35;1mDiaDiary Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `dia_diaries`[0m
+  [4;36;1mDiaEntry Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `dia_entries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `dia_entries` INNER JOIN `dia_diaries` ON `dia_entries`.dia_diary_id = `dia_diaries`.id WHERE (((dia_diaries.base_user_id = 1) AND (dia_diaries.deleted_at IS NULL OR dia_diaries.deleted_at > '2009-06-04 11:51:06') AND ((draft_flag = false) AND (draft_flag = false))) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:51:06')) [0m
+  [4;36;1mAbmAlbum Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `abm_albums`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `abm_albums` WHERE ((`abm_albums`.base_user_id = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:51:06')) [0m
+  [4;36;1mCmmCommunitiesBaseUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `cmm_communities_base_users`[0m
+  [4;35;1mCmmCommunity Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `cmm_communities`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE (((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:51:07') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:51:07')) [0m
+  [4;35;1mBaseUser Load (0.7ms)[0m   [0mSELECT `base_users`.* FROM `base_users` INNER JOIN `base_friends` ON `base_users`.id = `base_friends`.friend_id WHERE ((base_friends.base_user_id = 1) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:51:07') AND ((base_friends.status = 1 and base_friends.deleted_at is null))) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:07') ORDER BY base_users.created_at desc[0m
+  [4;36;1mDiaEntry Load Including Associations (0.6ms)[0m   [0;1mSELECT `dia_entries`.`id` AS t0_r0, `dia_entries`.`dia_diary_id` AS t0_r1, `dia_entries`.`title` AS t0_r2, `dia_entries`.`body` AS t0_r3, `dia_entries`.`public_level` AS t0_r4, `dia_entries`.`draft_flag` AS t0_r5, `dia_entries`.`created_at` AS t0_r6, `dia_entries`.`updated_at` AS t0_r7, `dia_entries`.`deleted_at` AS t0_r8, `dia_entries`.`last_commented_at` AS t0_r9, `dia_entries`.`contributed_at` AS t0_r10, `dia_diaries`.`id` AS t1_r0, `dia_diaries`.`base_user_id` AS t1_r1, `dia_diaries`.`default_public_level` AS t1_r2, `dia_diaries`.`created_at` AS t1_r3, `dia_diaries`.`updated_at` AS t1_r4, `dia_diaries`.`deleted_at` AS t1_r5 FROM `dia_entries` LEFT OUTER JOIN `dia_diaries` ON `dia_diaries`.id = `dia_entries`.dia_diary_id WHERE (draft_flag = false and dia_diaries.base_user_id in (NULL) and public_level != 5) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:51:07') ORDER BY contributed_at desc LIMIT 3[0m
+  [4;35;1mAbmAlbum Load (0.4ms)[0m   [0mSELECT * FROM `abm_albums` WHERE (base_user_id in (NULL) and public_level < 5) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:51:07') ORDER BY updated_at desc LIMIT 3[0m
+  [4;36;1mDiaEntry Load (1.5ms)[0m   [0;1mSELECT `dia_entries`.* FROM `dia_entries` INNER JOIN `dia_entry_comments` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id WHERE ((`dia_entry_comments`.base_user_id = 1) AND ((dia_entries.draft_flag != true))) AND (dia_entries.deleted_at IS NULL OR dia_entries.deleted_at > '2009-06-04 11:51:07') GROUP BY dia_entries.id ORDER BY dia_entries.last_commented_at desc LIMIT 3[0m
+  [4;35;1mCmmCommunity Load (0.5ms)[0m   [0mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:51:06') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:51:07') LIMIT 3[0m
+  [4;36;1mBaseUser Load (0.5ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:07') [0m
+  [4;35;1mCmmCommunity Load (0.4ms)[0m   [0mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:51:07') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:51:07') [0m
+  [4;36;1mTpcTopicCmmCommunity Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `tpc_topic_cmm_communities`[0m
+  [4;35;1mTpcTopic Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `tpc_topics`[0m
+  [4;36;1mTpcTopicCmmCommunity Load Including Associations (1.5ms)[0m   [0;1mSELECT `tpc_topic_cmm_communities`.`id` AS t0_r0, `tpc_topic_cmm_communities`.`tpc_topic_id` AS t0_r1, `tpc_topic_cmm_communities`.`cmm_community_id` AS t0_r2, `tpc_topic_cmm_communities`.`public_level` AS t0_r3, `tpc_topic_cmm_communities`.`created_at` AS t0_r4, `tpc_topic_cmm_communities`.`updated_at` AS t0_r5, `tpc_topic_cmm_communities`.`deleted_at` AS t0_r6, `tpc_topics`.`id` AS t1_r0, `tpc_topics`.`title` AS t1_r1, `tpc_topics`.`body` AS t1_r2, `tpc_topics`.`base_user_id` AS t1_r3, `tpc_topics`.`created_at` AS t1_r4, `tpc_topics`.`updated_at` AS t1_r5, `tpc_topics`.`deleted_at` AS t1_r6, `tpc_topics`.`last_commented_at` AS t1_r7, `tpc_topics`.`comment_count` AS t1_r8 FROM `tpc_topic_cmm_communities` LEFT OUTER JOIN `tpc_topics` ON `tpc_topics`.id = `tpc_topic_cmm_communities`.tpc_topic_id WHERE ((tpc_topics.created_at > '2009-05-25 11:51:07' or tpc_topics.last_commented_at > '2009-05-25 11:51:07') and cmm_community_id in (NULL)) AND (tpc_topic_cmm_communities.deleted_at IS NULL OR tpc_topic_cmm_communities.deleted_at > '2009-06-04 11:51:07') ORDER BY tpc_topics.last_commented_at desc, tpc_topics.created_at desc LIMIT 3[0m
+  [4;35;1mCmmCommunitiesBaseUser Load (0.4ms)[0m   [0mSELECT * FROM `cmm_communities_base_users` WHERE (base_user_id = 1 and status = 100) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:51:07') [0m
+  [4;36;1mCmmCommunitiesBaseUser Load (0.5ms)[0m   [0;1mSELECT * FROM `cmm_communities_base_users` WHERE (base_user_id = 1 and status in (1,2,10,20)) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:51:07') [0m
+  [4;35;1mTpcComment Load (0.4ms)[0m   [0mSELECT * FROM `tpc_comments` WHERE (created_at > '2009-05-25 11:51:07' and base_user_id = 1) [0m
+  [4;36;1mTpcTopicCmmCommunity Load Including Associations (1.5ms)[0m   [0;1mSELECT `tpc_topic_cmm_communities`.`id` AS t0_r0, `tpc_topic_cmm_communities`.`tpc_topic_id` AS t0_r1, `tpc_topic_cmm_communities`.`cmm_community_id` AS t0_r2, `tpc_topic_cmm_communities`.`public_level` AS t0_r3, `tpc_topic_cmm_communities`.`created_at` AS t0_r4, `tpc_topic_cmm_communities`.`updated_at` AS t0_r5, `tpc_topic_cmm_communities`.`deleted_at` AS t0_r6, `tpc_topics`.`id` AS t1_r0, `tpc_topics`.`title` AS t1_r1, `tpc_topics`.`body` AS t1_r2, `tpc_topics`.`base_user_id` AS t1_r3, `tpc_topics`.`created_at` AS t1_r4, `tpc_topics`.`updated_at` AS t1_r5, `tpc_topics`.`deleted_at` AS t1_r6, `tpc_topics`.`last_commented_at` AS t1_r7, `tpc_topics`.`comment_count` AS t1_r8 FROM `tpc_topic_cmm_communities` LEFT OUTER JOIN `tpc_topics` ON `tpc_topics`.id = `tpc_topic_cmm_communities`.tpc_topic_id WHERE (tpc_topic_id in (NULL) and cmm_community_id not in (-1) and (cmm_community_id in (NULL) or public_level <= 2)) AND (tpc_topic_cmm_communities.deleted_at IS NULL OR tpc_topic_cmm_communities.deleted_at > '2009-06-04 11:51:07') ORDER BY tpc_topics.last_commented_at desc LIMIT 3[0m
+  [4;35;1mBaseProfile Load (0.6ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:51:07') LIMIT 1[0m
+Rendering base/portal
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT `cmm_communities`.* FROM `cmm_communities` INNER JOIN `cmm_communities_base_users` ON `cmm_communities`.id = `cmm_communities_base_users`.cmm_community_id WHERE ((cmm_communities_base_users.base_user_id = 1) AND (cmm_communities_base_users.deleted_at IS NULL OR cmm_communities_base_users.deleted_at > '2009-06-04 11:51:07') AND ((status in (1,2,10,20) and cmm_communities_base_users.deleted_at is null))) AND (cmm_communities.deleted_at IS NULL OR cmm_communities.deleted_at > '2009-06-04 11:51:07') [0m
+Rendering nested layouts ["layouts/portal"]
+  [4;35;1mBaseUserRole Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;36;1mBaseUserRole Load (0.5ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:51:07') LIMIT 1[0m
+Rendered common/_header_search (19.5ms)
+Rendered common/_header_menu (2.3ms)
+  [4;35;1mBaseProfile Columns (4.5ms)[0m   [0mSHOW FIELDS FROM `base_profiles`[0m
+  [4;36;1mBaseMenu Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `base_menus`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (24.9ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (1.3ms)
+Rendered layouts/_portal (68.0ms)
+  [4;36;1mPntFilter Load (0.5ms)[0m   [0;1mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base' and action_name = 'portal' and (start_at is null or start_at < '2009-06-04 11:51:07') and (end_at is null or end_at > '2009-06-04 11:51:07')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:51:07') [0m
+Completed in 646ms (View: 70, DB: 1) | 200 OK [http://localhost/base/portal]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MsgMessageController#index (for 127.0.0.1 at 2009-06-04 11:51:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"msg_message"}
+controller_name msg_message: action_name index
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBaseUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `base_users`[0m
+  [4;36;1mBaseUser Load (0.4ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:08') LIMIT 1[0m
+  [4;35;1mMsgReceiver Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `msg_receivers`[0m
+  [4;36;1mMsgMessage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `msg_messages`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(msg_messages.id) AS count_msg_messages_id FROM `msg_messages` INNER JOIN `msg_receivers` ON `msg_messages`.id = `msg_receivers`.msg_message_id WHERE ((msg_receivers.base_user_id = 1) AND (msg_receivers.deleted_at IS NULL OR msg_receivers.deleted_at > '2009-06-04 11:51:08') AND (((draft_flag = false or draft_flag is null) and trash_status is null))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:51:09') [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_receivers` ON `msg_messages`.id = `msg_receivers`.msg_message_id WHERE (((msg_receivers.base_user_id = 1) AND (msg_receivers.deleted_at IS NULL OR msg_receivers.deleted_at > '2009-06-04 11:51:09') AND (((draft_flag = false or draft_flag is null) and trash_status is null))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:51:09')) [0m
+  [4;35;1mMsgSender Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `msg_senders`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_senders` ON `msg_messages`.id = `msg_senders`.msg_message_id WHERE (((msg_senders.base_user_id = 1) AND (msg_senders.deleted_at IS NULL OR msg_senders.deleted_at > '2009-06-04 11:51:09') AND (((draft_flag = false or draft_flag is null) and trash_status is null))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:51:09')) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_senders` ON `msg_messages`.id = `msg_senders`.msg_message_id WHERE (((msg_senders.base_user_id = 1) AND (msg_senders.deleted_at IS NULL OR msg_senders.deleted_at > '2009-06-04 11:51:09') AND ((draft_flag = true and trash_status is null))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:51:09')) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(DISTINCT `msg_messages`.id) AS count_all FROM `msg_messages` LEFT OUTER JOIN `msg_senders` ON msg_senders.msg_message_id = msg_messages.id LEFT OUTER JOIN `msg_receivers` ON msg_receivers.msg_message_id = msg_messages.id WHERE ((msg_senders.base_user_id = 1 and msg_senders.trash_status = 1) or (msg_receivers.base_user_id = 1 and msg_receivers.trash_status = 1)) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:51:09') [0m
+Rendering msg_message/index
+Rendered msg/_message_sidemenu (0.7ms)
+Rendered msg/_message_menu (0.8ms)
+Rendering nested layouts ["layouts/msg_application"]
+  [4;35;1mBaseUserRole Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;36;1mBaseUserRole Load (0.4ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:51:09') LIMIT 1[0m
+Rendered common/_header_search (12.2ms)
+Rendered common/_header_menu (0.9ms)
+  [4;35;1mBaseProfile Load (0.5ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:51:09') LIMIT 1[0m
+Rendered common/_header_profile (22.7ms)
+  [4;36;1mBaseMenu Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `base_menus`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (17.0ms)
+Rendered common/_flash_info (0.2ms)
+Rendered layouts/_msg_application (63.2ms)
+  [4;36;1mPntFilter Load (0.6ms)[0m   [0;1mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'msg_message' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:51:09') and (end_at is null or end_at > '2009-06-04 11:51:09')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:51:09') [0m
+Completed in 339ms (View: 67, DB: 2) | 200 OK [http://localhost/msg_message]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AbmAlbumController#index (for 127.0.0.1 at 2009-06-04 11:51:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"abm_album"}
+controller_name abm_album: action_name index
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBaseUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `base_users`[0m
+  [4;36;1mBaseUser Load (0.5ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:10') LIMIT 1[0m
+  [4;35;1mAbmAlbum Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `abm_albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(abm_albums.id) AS count_abm_albums_id FROM `abm_albums` WHERE (`abm_albums`.base_user_id = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:51:10') [0m
+Rendering abm_album/index
+  [4;35;1mAbmAlbum Load (0.4ms)[0m   [0mSELECT * FROM `abm_albums` WHERE (`abm_albums`.base_user_id = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:51:11') ORDER BY updated_at desc LIMIT 0, 1[0m
+  [4;36;1mAbmImage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `abm_images`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `abm_images` WHERE ((`abm_images`.abm_album_id = 1) AND (abm_images.deleted_at IS NULL OR abm_images.deleted_at > '2009-06-04 11:51:11')) [0m
+Rendering nested layouts ["layouts/application"]
+  [4;36;1mBaseUserRole Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;35;1mBaseUserRole Load (0.4ms)[0m   [0mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:51:11') LIMIT 1[0m
+Rendered common/_header_search (11.2ms)
+Rendered common/_header_menu (0.9ms)
+  [4;36;1mBaseProfile Load (0.5ms)[0m   [0;1mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:51:11') LIMIT 1[0m
+Rendered common/_header_profile (20.3ms)
+  [4;35;1mBaseMenu Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `base_menus`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (14.2ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_application (56.4ms)
+  [4;35;1mPntFilter Load (0.5ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'abm_album' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:51:11') and (end_at is null or end_at > '2009-06-04 11:51:11')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:51:11') [0m
+Completed in 417ms (View: 58, DB: 2) | 200 OK [http://localhost/abm_album/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AbmAlbumController#show (for 127.0.0.1 at 2009-06-04 11:51:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"abm_album"}
+controller_name abm_album: action_name show
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAbmAlbum Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `abm_albums`[0m
+  [4;35;1mAbmAlbum Load (0.4ms)[0m   [0mSELECT * FROM `abm_albums` WHERE (`abm_albums`.`id` = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:51:14') [0m
+  [4;36;1mBaseUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.6ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:14') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `abm_albums` WHERE (`abm_albums`.`id` = 1) AND (abm_albums.deleted_at IS NULL OR abm_albums.deleted_at > '2009-06-04 11:51:14') [0m
+  [4;35;1mAbmImage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `abm_images`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(abm_images.id) AS count_abm_images_id FROM `abm_images` WHERE (`abm_images`.abm_album_id = 1) AND (abm_images.deleted_at IS NULL OR abm_images.deleted_at > '2009-06-04 11:51:14') [0m
+Rendering abm_album/show
+  [4;35;1mBaseUser Load (0.4ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:14') [0m
+  [4;36;1mBaseProfile Load (0.5ms)[0m   [0;1mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:51:14') LIMIT 1[0m
+Rendered common/_header_profile (21.5ms)
+Rendering nested layouts ["layouts/application"]
+  [4;35;1mBaseUserRole Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;36;1mBaseUserRole Load (0.5ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:51:15') LIMIT 1[0m
+Rendered common/_header_search (14.0ms)
+Rendered common/_header_menu (1.0ms)
+  [4;35;1mBaseMenu Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `base_menus`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (17.1ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (3.7ms)
+Rendered layouts/_application (44.1ms)
+  [4;35;1mPntFilter Load (0.6ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'abm_album' and action_name = 'show' and (start_at is null or start_at < '2009-06-04 11:51:15') and (end_at is null or end_at > '2009-06-04 11:51:15')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:51:15') [0m
+Completed in 484ms (View: 46, DB: 2) | 200 OK [http://localhost/abm_album/show/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-04 11:51:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/spyglass.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BaseController#index (for 127.0.0.1 at 2009-06-04 11:51:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"base"}
+controller_name base: action_name index
+  [4;36;1mBaseNotice Load (0.5ms)[0m   [0;1mSELECT * FROM `base_notices` WHERE (start_datetime < '2009-06-04 11:51:19' and end_datetime > '2009-06-04 11:51:19') AND (base_notices.deleted_at IS NULL OR base_notices.deleted_at > '2009-06-04 11:51:19') ORDER BY start_datetime desc[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.5ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:19') LIMIT 1[0m
+  [4;36;1mMsgReceiver Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `msg_receivers`[0m
+  [4;35;1mMsgMessage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `msg_messages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `msg_messages` INNER JOIN `msg_receivers` ON `msg_messages`.id = `msg_receivers`.msg_message_id WHERE (((msg_receivers.base_user_id = 1) AND (msg_receivers.deleted_at IS NULL OR msg_receivers.deleted_at > '2009-06-04 11:51:19') AND (((draft_flag = false or draft_flag is null) and trash_status is null and read_flag != true))) AND (msg_messages.deleted_at IS NULL OR msg_messages.deleted_at > '2009-06-04 11:51:19')) [0m
+  [4;35;1mBaseFriend Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `base_friends`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_friends` WHERE ((`base_friends`.friend_id = 1 AND (status = 2 and base_friends.deleted_at is null)) AND (base_friends.deleted_at IS NULL OR base_friends.deleted_at > '2009-06-04 11:51:19')) [0m
+  [4;35;1mDiaEntryComment Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `dia_entry_comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(DISTINCT `dia_entry_comments`.id) AS count_all FROM `dia_entry_comments` LEFT OUTER JOIN `dia_entries` ON `dia_entries`.id = `dia_entry_comments`.dia_entry_id LEFT OUTER JOIN `dia_diaries` ON `dia_diaries`.id = `dia_entries`.dia_diary_id WHERE (dia_diaries.base_user_id = 1 and read_flag != true and dia_entries.draft_flag != true) [0m
+==> Got DiaEntry:DiaEntry#portal_public_entries from cache. (0.00032)
+==> Got AbmAlbum:AbmAlbum#portal_public_albums from cache. (0.00032)
+==> Got CmmCommunity:CmmCommunity#portal_communities from cache. (0.00034)
+==> Got TpcTopicCmmCommunity:TpcTopicCmmCommunity#portal_topics from cache. (0.00033)
+Rendering base/index
+Rendering nested layouts ["layouts/portal"]
+  [4;35;1mBaseUserRole Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;36;1mBaseUserRole Load (0.4ms)[0m   [0;1mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:51:19') LIMIT 1[0m
+Rendered common/_header_search (16.3ms)
+Rendered common/_header_menu (0.9ms)
+  [4;35;1mBaseProfile Load (0.6ms)[0m   [0mSELECT * FROM `base_profiles` WHERE (`base_profiles`.base_user_id = 1) AND (base_profiles.deleted_at IS NULL OR base_profiles.deleted_at > '2009-06-04 11:51:19') LIMIT 1[0m
+  [4;36;1mBaseProfile Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `base_profiles`[0m
+  [4;35;1mBaseMenu Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `base_menus`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `base_menus` WHERE (`base_menus`.base_user_id = 1) [0m
+Rendered common/_header_submenu (111.6ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_footer (0.8ms)
+Rendered layouts/_portal (166.5ms)
+  [4;35;1mPntFilter Load (0.4ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'base' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:51:19') and (end_at is null or end_at > '2009-06-04 11:51:19')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:51:19') [0m
+Completed in 657ms (View: 168, Memcache: 1, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Manage::MngController#index (for 127.0.0.1 at 2009-06-04 11:51:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"manage/mng"}
+controller_name mng: action_name index
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBaseUser Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `base_users`[0m
+  [4;35;1mBaseUser Load (0.6ms)[0m   [0mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:28') LIMIT 1[0m
+  [4;36;1mBaseUserRole Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `base_user_roles`[0m
+  [4;35;1mBaseUserRole Load (0.4ms)[0m   [0mSELECT * FROM `base_user_roles` WHERE (`base_user_roles`.`base_user_id` = 1 AND `base_user_roles`.`role` = 'manager') AND (base_user_roles.deleted_at IS NULL OR base_user_roles.deleted_at > '2009-06-04 11:51:28') LIMIT 1[0m
+  [4;36;1mMngUserActionHistory Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `mng_user_action_histories`[0m
+Switching to Master
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMngUserActionHistory Create (0.3ms)[0m   [0;1mINSERT INTO `mng_user_action_histories` (`created_at`, `user_action`, `deleted_at`, `updated_at`, `base_user_id`) VALUES('2009-06-04 11:51:28', '{\"action\"=>\"index\", \"controller\"=>\"manage/mng\"}\n', NULL, '2009-06-04 11:51:28', 1)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Switching to Slave
+Rendering template within layouts/mng_application
+Rendering manage/mng/index
+  [4;36;1mBaseUser Load (0.5ms)[0m   [0;1mSELECT * FROM `base_users` WHERE (`base_users`.`id` = 1) AND (base_users.deleted_at IS NULL OR base_users.deleted_at > '2009-06-04 11:51:28') [0m
+Rendered common/_mng_header (8.0ms)
+Rendered common/_flash_info (0.1ms)
+Rendered common/_mng_footer (0.5ms)
+  [4;35;1mPntFilter Load (0.4ms)[0m   [0mSELECT `pnt_filters`.* FROM `pnt_filters` INNER JOIN `pnt_filter_masters` ON `pnt_filter_masters`.id = `pnt_filters`.pnt_filter_master_id WHERE (controller_name = 'mng' and action_name = 'index' and (start_at is null or start_at < '2009-06-04 11:51:28') and (end_at is null or end_at > '2009-06-04 11:51:28')) AND (pnt_filters.deleted_at IS NULL OR pnt_filters.deleted_at > '2009-06-04 11:51:28') [0m
+Completed in 334ms (View: 54, DB: 3) | 200 OK [http://localhost/manage]

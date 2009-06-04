@@ -1,0 +1,292 @@
+
+/* wrap graygradation_short_40
+-------------------------------------------------------------- */
+h5.graygradation_short_40 span,
+h6.graygradation_short_40 span{
+	display:block;
+	background:#d6d6d6 url("/images/default/filter/gradation_t35_filter.png") scroll 50%;
+	padding:1em;
+	margin:-22px -22px 0em -22px;
+}
+.graygradation_short_40 .wrap1{
+	padding:6px 0px 0px;
+	padding-bottom:3px; /* 2box_over for ie6 */
+	margin:0px -3px 0px -1px;
+	border-width:0px;
+}
+.graygradation_short_40 .wrap2{
+	padding:0px 0px 8px;
+	border-width:0px;
+}
+.graygradation_short_40 .wrap3{
+	padding:0px 3px 0px 0px;
+	border-width:0px;
+}
+.graygradation_short_40 .box_inner{
+	padding:0px 0px 0px 2px;
+	border-width:0px;
+}
+.span-24 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-96.png") 0px bottom no-repeat ;
+}
+.span-24 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-95.png") repeat-y ;
+}
+.span-24 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-94.png") no-repeat ;
+}
+.span-24 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-93.png") 0px -6px no-repeat ;
+}
+.span-23 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-92.png") 0px bottom no-repeat ;
+}
+.span-23 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-91.png") repeat-y ;
+}
+.span-23 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-90.png") no-repeat ;
+}
+.span-23 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-89.png") 0px -6px no-repeat ;
+}
+.span-22 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-88.png") 0px bottom no-repeat ;
+}
+.span-22 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-87.png") repeat-y ;
+}
+.span-22 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-86.png") no-repeat ;
+}
+.span-22 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-85.png") 0px -6px no-repeat ;
+}
+.span-21 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-84.png") 0px bottom no-repeat ;
+}
+.span-21 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-83.png") repeat-y ;
+}
+.span-21 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-82.png") no-repeat ;
+}
+.span-21 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-81.png") 0px -6px no-repeat ;
+}
+.span-20 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-80.png") 0px bottom no-repeat ;
+}
+.span-20 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-79.png") repeat-y ;
+}
+.span-20 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-78.png") no-repeat ;
+}
+.span-20 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-77.png") 0px -6px no-repeat ;
+}
+.span-19 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-76.png") 0px bottom no-repeat ;
+}
+.span-19 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-75.png") repeat-y ;
+}
+.span-19 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-74.png") no-repeat ;
+}
+.span-19 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-73.png") 0px -6px no-repeat ;
+}
+.span-18 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-72.png") 0px bottom no-repeat ;
+}
+.span-18 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-71.png") repeat-y ;
+}
+.span-18 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-70.png") no-repeat ;
+}
+.span-18 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-69.png") 0px -6px no-repeat ;
+}
+.span-17 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-68.png") 0px bottom no-repeat ;
+}
+.span-17 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-67.png") repeat-y ;
+}
+.span-17 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-66.png") no-repeat ;
+}
+.span-17 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-65.png") 0px -6px no-repeat ;
+}
+.span-16 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-64.png") 0px bottom no-repeat ;
+}
+.span-16 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-63.png") repeat-y ;
+}
+.span-16 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-62.png") no-repeat ;
+}
+.span-16 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-61.png") 0px -6px no-repeat ;
+}
+.span-15 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-60.png") 0px bottom no-repeat ;
+}
+.span-15 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-59.png") repeat-y ;
+}
+.span-15 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-58.png") no-repeat ;
+}
+.span-15 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-57.png") 0px -6px no-repeat ;
+}
+.span-14 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-56.png") 0px bottom no-repeat ;
+}
+.span-14 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-55.png") repeat-y ;
+}
+.span-14 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-54.png") no-repeat ;
+}
+.span-14 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-53.png") 0px -6px no-repeat ;
+}
+.span-13 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-52.png") 0px bottom no-repeat ;
+}
+.span-13 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-51.png") repeat-y ;
+}
+.span-13 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-50.png") no-repeat ;
+}
+.span-13 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-49.png") 0px -6px no-repeat ;
+}
+.span-12 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-48.png") 0px bottom no-repeat ;
+}
+.span-12 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-47.png") repeat-y ;
+}
+.span-12 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-46.png") no-repeat ;
+}
+.span-12 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-45.png") 0px -6px no-repeat ;
+}
+.span-11 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-44.png") 0px bottom no-repeat ;
+}
+.span-11 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-43.png") repeat-y ;
+}
+.span-11 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-42.png") no-repeat ;
+}
+.span-11 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-41.png") 0px -6px no-repeat ;
+}
+.span-10 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-40.png") 0px bottom no-repeat ;
+}
+.span-10 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-39.png") repeat-y ;
+}
+.span-10 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-38.png") no-repeat ;
+}
+.span-10 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-37.png") 0px -6px no-repeat ;
+}
+.span-9 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-36.png") 0px bottom no-repeat ;
+}
+.span-9 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-35.png") repeat-y ;
+}
+.span-9 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-34.png") no-repeat ;
+}
+.span-9 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-33.png") 0px -6px no-repeat ;
+}
+.span-8 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-32.png") 0px bottom no-repeat ;
+}
+.span-8 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-31.png") repeat-y ;
+}
+.span-8 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-30.png") no-repeat ;
+}
+.span-8 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-29.png") 0px -6px no-repeat ;
+}
+.span-7 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-28.png") 0px bottom no-repeat ;
+}
+.span-7 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-27.png") repeat-y ;
+}
+.span-7 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-26.png") no-repeat ;
+}
+.span-7 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-25.png") 0px -6px no-repeat ;
+}
+.span-6 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-24.png") 0px bottom no-repeat ;
+}
+.span-6 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-23.png") repeat-y ;
+}
+.span-6 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-22.png") no-repeat ;
+}
+.span-6 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-21.png") 0px -6px no-repeat ;
+}
+.span-5 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-20.png") 0px bottom no-repeat ;
+}
+.span-5 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-19.png") repeat-y ;
+}
+.span-5 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-18.png") no-repeat ;
+}
+.span-5 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-17.png") 0px -6px no-repeat ;
+}
+.span-4 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-36.png") 0px bottom no-repeat ;
+}
+.span-4 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-35.png") repeat-y ;
+}
+.span-4 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-34.png") no-repeat ;
+}
+.span-4 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-33.png") 0px -6px no-repeat ;
+}
+.span-3 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-12.png") 0px bottom no-repeat ;
+}
+.span-3 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-11.png") repeat-y ;
+}
+.span-3 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-10.png") no-repeat ;
+}
+.span-3 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-9.png") 0px -6px no-repeat ;
+}
+.span-2 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-8.png") 0px bottom no-repeat ;
+}
+.span-2 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-7.png") repeat-y ;
+}
+.span-2 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-6.png") no-repeat ;
+}
+.span-2 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-5.png") 0px -6px no-repeat ;
+}
+.span-1 .graygradation_short_40 .wrap2{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-4.png") 0px bottom no-repeat ;
+}
+.span-1 .graygradation_short_40 .wrap3{	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-3.png") repeat-y ;
+}
+.span-1 .graygradation_short_40 .box_inner{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-2.png") no-repeat ;
+}
+.span-1 .graygradation_short_40 .wrap1{
+	background:transparent url("/images/default/wrap/graygradation_short_40/images/graygradation_short_40_w-1.png") 0px -6px no-repeat ;
+}
