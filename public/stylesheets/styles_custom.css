@@ -162,6 +162,26 @@ body{
 	padding:0.3em 0.5em;
 	background:transparent;
 }
+
+/* Portal
+-------------------------------------------------------------- */
+
+#download_box .col_banner_link {
+	background-color:#FFA500;
+	border:3px solid #FFA500;
+	display:block;
+	margin-left:-3px;
+	padding:0;
+}
+
+.current_version {
+	background:#7DC900 url(/images/default/filter/gradation_t35_filter.png) repeat scroll 100% 50%;
+	border:3px solid #9DC900;
+	display:block;
+	margin:0 -5px 0 -3px;
+	padding:3px 0;
+}
+
 /* Profile
 -------------------------------------------------------------- */
 #home_profiles_box{

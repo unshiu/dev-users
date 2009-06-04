@@ -695,6 +695,17 @@ ul.sidemenu{
 .top_topic_box .title img{
 	float:left;
 }
+.top_topic_box h3 {
+	background:transparent url(/images/default/title/title-1.jpg) no-repeat scroll right bottom !important;
+	margin:-20px -20px 0;
+	padding:5px 0;
+	position:relative;
+}
+
+.top_topic_box h3 span {
+	display:block;
+	padding:0 0 4px 20px;
+}
 
 /* Side_Contents
 -------------------------------------------------------------- */
@@ -734,17 +745,22 @@ body#mypage_top #common_friend_box,
 }
 /* login
 -------------------------------------------------------------- */
+
 #login_box .box_inner{
-	background:#fff;
+/*	background:#fff;*/
 	padding:1.5em;
 }
 .top_portal #login_box .box_inner fieldset{
 	border:none;
 	margin:0em;
-	padding:0em;
+/*	padding:0em;*/
 }
 #login_box .box_inner button{
 	float:right;
+}
+#login_box .box_inner a{
+	display:block;
+	text-align:center;
 }
 .login #login_box label{
 	font-size:130%;
@@ -759,6 +775,15 @@ body#mypage_top #common_friend_box,
 .login #login_box input:focus{
 	background-color:#f2f2f2;
 }
+ #login_box a.button,
+ #login_box button{
+	background:transparent url("/images/default/button/button_R10glassorange_a.gif") no-repeat scroll top right;
+}
+ #login_box a.button span,
+ #login_box button span{
+	background:transparent url("/images/default/button/button_R10glassorange_span.gif")  no-repeat;
+}
+
 /* Config (Base_user_config)
 -------------------------------------------------------------- */
 
@@ -950,6 +975,21 @@ div.wysiwyg ul.panel li a.emoji {
 #registration_box .box_inner .button{
 	float:right;
 }
+
+#registration_box .col_banner_link {
+	display:block;
+	margin-left:-3px;
+	padding:10px 0;
+}
+
+.col_banner_link {
+	background:#3DC6F0 url(/images/default/filter/gradation_t35_filter.png) repeat scroll 100% 50%;
+	border:3px solid #9DC6F0;
+	font-size:25px;
+	padding:10px;
+	text-align:center;
+}
+
 /* message
 -------------------------------------------------------------- */
 

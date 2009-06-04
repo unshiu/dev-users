@@ -1,9 +1,94 @@
-<div class="top_topic_box box_outer">
+<div id="release_note" class=" box_outer">
+	<div class="wrap1">
+	<div class="wrap2">
+	<div class="wrap3">
+	<div class="box_inner clearfix">
+		<div class="span-6 first colborder">
+			<h3><span>Release Note</span></h3>
+			<div class="topic_body">
+				<div class="topic_body_inner clearfix">
+					<div class="newsitem clearfix">
+						<p>
+						<a href="profile_detail.htm">
+						<h6><span></span></h6>
+						<span class="date">2009.03.03</span>
+						<span>
+							ver１
+						</span>
+						</a>
+						<p>
+
+					</div><!--/newsitem-->
+					<hr/>
+					<div class="more"><a href="">すべて表示</a></div>
+				</div><!--/topic_body_inner-->
+			</div><!--/topic_body-->
+		</div>
+		<div class="span-5 last">
+			<h3><span>バグ情報</span></h3>
+			<div class="topic_body">
+				<div class="topic_body_inner clearfix">
+					<div class="newsitem clearfix">
+						<p>
+						<h6><span>タイトル</span></h6>
+						<div class="date">2009.03.03</div>
+						<div>
+							本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+						</div>
+						<div class="more"><a href="">もっと読む</a></div>
+						</a>
+						<p>
+					</div><!--/newsitem-->
+					<hr/>
+					<div class="more"><a href="">すべて表示</a></div>
+				</div><!--/topic_body_inner-->
+			</div><!--/topic_body-->
+		</div><!--/-->
+					<div><a class="button" href="http://wiki.unshiu.jp/"><span>Wikiを見る</span></a></div>
+	</div><!--/box_inner-->
+	</div><!--/wrap3-->
+	</div><!--/wrap2-->
+	</div><!--/wrap1-->
+</div><!--/top_topic-->
+
+<div class=" top_topic_box box_outer">
+	<div class="wrap1">
+	<div class="wrap2">
+	<div class="wrap3">
+	<div class="box_inner clearfix">
+	<h3><span><img src="/images/default/title/title-1icon.jpg" alt="" >お知らせ</span></h3>
+		<div class="topic_body">
+			<% if @notices.size.zero? %>
+				<p><%= t('view.noun.base_notice') %>はありません。</p>
+
+			<% else %>
+				
+				<% @notices.each do |notice| %>
+			      	<h6><%= link_to truncate(h(notice.title), :length => 20), :controller => 'base_notice', :action => 'show', :id => notice.id %></h6>
+					<p>
+						<%= truncate(h(notice.body), :length => 20)%>
+					</p>
+					<div class="date"><%= l(notice.start_datetime.to_date, :format => :short) %></div>
+				<% end %>
+				
+				<div class="more">
+					<%= link_to "すべて表示", :controller => :base_notice, :action => :list %>
+				</div>
+				
+			<% end %>
+		</div><!--/side_topic_body-->
+	</div><!--/side_col_inner-->
+	</div><!--/wrap3-->
+	</div><!--/wrap2-->
+	</div><!--/wrap1-->
+</div><!--/box_outer-->
+						
+<div class=" top_topic_box box_outer">
 	<div class="wrap1">
 	<div class="wrap2">
 	<div class="wrap3">
 	<div class="box_inner">
-		<div class="title"><h2><span><img src="/images/default/title/title-1icon.jpg" alt="" >公開日記</span></h2></div>
+		<h3><span><img src="/images/default/title/title-1icon.jpg" alt="" >公開日記</span></h3>
 		<div class="topic_body">
 			<div class="topic_body_inner clearfix">
 				<% @entries.each do |entry| %>
@@ -34,12 +119,12 @@
 	</div><!--/wrap1-->
 </div>
 
-<div class="top_topic_box box_outer">
+<div class=" top_topic_box box_outer">
 	<div class="wrap1">
 	<div class="wrap2">
 	<div class="wrap3">
 	<div class="box_inner">
-		<div class="title"><h2><span><img src="/images/default/title/title-1icon.jpg" alt="" >公開アルバム</span></h2></div>
+		<h3><span><img src="/images/default/title/title-1icon.jpg" alt="" >公開アルバム</span></h3>
 		<div class="topic_body">
 			<div class="topic_body_inner clearfix">
 				<% @albums.each do |album| %>
@@ -70,12 +155,12 @@
 	</div><!--/wrap1-->
 </div><!--/top_topic-->
 
-<div class="top_topic_box box_outer">
+<div class=" top_topic_box box_outer">
 	<div class="wrap1">
 	<div class="wrap2">
 	<div class="wrap3">
 	<div class="box_inner">
-		<div class="title"><h2><span><img src="/images/default/title/title-1icon.jpg" alt="">新着コミュニティ</span></h2></div>
+		<h3><span><img src="/images/default/title/title-1icon.jpg" alt="">新着コミュニティ</span></h3>
 		<div class="topic_body">
 			<div class="topic_body_inner clearfix">
 				<% @communities.each do |community| %>
@@ -110,7 +195,39 @@
 
 <% unless logged_in? %>
 	
-	<div id="login_box" class="W5R4B9df box_outer">
+	<div id="site_explanation_box" class=" box_outer clearfix">
+		<div class="wrap1">
+		<div class="wrap2">
+		<div class="wrap3">
+		<div class="box_inner clearfix">
+				<a class="" href="presignup.htm" style="color:dc900;font-size:25px;"><span> <span style="color:dc900;font-size:46px;">Unshiu</span>とは?</span></a>
+				<p class="prepend-top"></p>
+				<div class="more clearfix"><a href="http://wiki.unshiu.jp">もっと詳しく！</a></div>
+					<div class="span-8 prepend-top">
+					<div id="download_box" class=" clearfix">
+						<div class="wrap1">
+						<div class="wrap2">
+						<div class="wrap3">
+						<div class="box_inner clearfix">
+								<a class="col_banner_link span-7" href="presignup.htm"><span>Download Page >></span></a>
+								<p class="current_version span-7">最新　ver　x.x</p>
+								<div class="more "><a href="announcementlist.htm">archives</a></div>
+						</div><!--/registration_inner-->
+						</div><!--/wrap3-->
+						</div><!--/wrap2-->
+						</div><!--/wrap1-->
+					</div><!--/download_box-->
+					</div>
+
+
+
+		</div><!--/registration_inner-->
+		</div><!--/wrap3-->
+		</div><!--/wrap2-->
+		</div><!--/wrap1-->
+	</div><!--/site_explanation_box-->
+	
+	<div id="login_box" class=" box_outer">
 		<div class="wrap1">
 		<div class="wrap2">
 		<div class="wrap3">
@@ -142,15 +259,13 @@
 		</div><!--/wrap1-->
 	</div><!--/login_box-->
 	
-	
-	<div id="registration_box" class="W5R4B9df box_outer clearfix">
+	<div id="registration_box" class=" box_outer clearfix">
 		<div class="wrap1">
 		<div class="wrap2">
 		<div class="wrap3">
 		<div class="box_inner clearfix">
-			<div class="tilte"><h6 class="caps"><span>ユーザー登録（無料）</span></h6></div>
-			<%= link_to "<span><img src='stylesheets/blueprint/plugins/buttons/icons/key.png' alt=''/>ユーザー登録</span>", { :controller => :base_signup, :action => 'presignup' }, :class => "button"%>
-		</div><!--/registration_inner-->
+			<%= link_to "<span> ユーザー登録（無料）>></span>", { :controller => :base_signup, :action => 'presignup' }, :class => "col_banner_link"%>
+		</div><!--/box_inner-->
 		</div><!--/wrap3-->
 		</div><!--/wrap2-->
 		</div><!--/wrap1-->
@@ -163,31 +278,28 @@
 	<div class="wrap2">
 	<div class="wrap3">
 	<div class="box_inner clearfix">
-		<h6 class="W5R4B9df caps"><span>お知らせ</span></h6>
+		<h5 class="W5R4B9df caps"><span>イベント情報</span></h5>
 		<div class="side_topic_body">
-			<% if @notices.size.zero? %>
-				<p><%= t('view.noun.base_notice') %>はありません。</p>
-
-			<% else %>
-				
-				<% @notices.each do |notice| %>
-			      	<h6><span><%= link_to truncate(h(notice.title), :length => 20), :controller => 'base_notice', :action => 'show', :id => notice.id %></span></h6>
-					<div class="date"><%= l(notice.start_datetime.to_date, :format => :short) %></div>
-					<div>
-						<%= truncate(h(notice.body), :length => 20)%>
-					</div>
-				<% end %>
-				
-				<div class="more clearfix">
-					<%= link_to "お知らせ一覧へ", :controller => :base_notice, :action => :list %>
-				</div>
-				
-			<% end %>
 		</div><!--/side_topic_body-->
 	</div><!--/side_col_inner-->
 	</div><!--/wrap3-->
 	</div><!--/wrap2-->
 	</div><!--/wrap1-->
 </div><!--/side_topic_box-->
+
+<div class="W5R4B9df side_topic_box box_outer">
+	<div class="wrap1">
+	<div class="wrap2">
+	<div class="wrap3">
+	<div class="box_inner clearfix">
+		<h5 class="W5R4B9df caps"><span>実績情報</span></h5>
+		<div class="side_topic_body">
+		</div><!--/side_topic_body-->
+	</div><!--/side_col_inner-->
+	</div><!--/wrap3-->
+	</div><!--/wrap2-->
+	</div><!--/wrap1-->
+</div><!--/side_topic_box-->
+					
 
 <% end %>
