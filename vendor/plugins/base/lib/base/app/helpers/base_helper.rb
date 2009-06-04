@@ -166,7 +166,7 @@ module BaseHelperModule
     		<div class="sub_menu_title_col">
     			<div class="sub_menu_title">#{title}</div>
     		</div>
-    		<img src="/images/default/icon/#{image}.gif" width="32" height="32" border="0">
+    		<img src="/images/default/icon/#{image}.png" width="32" height="32" border="0">
     	</div>
     	</a>
     END
