@@ -4,9 +4,8 @@
 h5 span,
 h6 span{
 	display:block;
-	background:#d6d6d6 url("/images/default/filter/gradation_t35_filter.png") scroll 50%;
+	margin:-22px -22px 0;
 	padding:1em;
-	margin:-22px -22px 0em -22px;
 }
  .wrap1{
 	padding:6px 0px 0px;
