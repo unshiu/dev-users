@@ -29,14 +29,14 @@ favorite:
 point:
   id: 5
   name: ポイント
-  icon: favorite
+  icon: point
   url: /pnt/index
   num: 5
   default_show: true
 prof:
   id: 6
   name: マイプロフ
-  icon: favorite
+  icon: profile
   url: /prf/index
   num: 6
   default_show: false
