@@ -336,14 +336,8 @@ ul.menu_list {  margin:0px;list-style-type: none;font-weight:bold;position:relat
 
 /* Menu Search
 -------------------------------------------------------------- */
-#menu_and_header_search_col{
-}
-#header_search_col{
-}
-#header_search_box_wrap{
-	padding:2px;
-	background-color:#9d9d9d;
-	margin-right:1.5em;
+#header_search_col .box_inner{
+	padding:0px;
 }
 #header_search_box{
 	background-color:#7dc900;
