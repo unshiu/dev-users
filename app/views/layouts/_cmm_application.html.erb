@@ -4,7 +4,9 @@
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title><%= (@content_for_header_title ||= "HOME").strip %> - <%= (@content_for_sub_title ||= "").strip %> - unshiu</title>
   <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'jquery.corners.js' %>
   <%= javascript_include_tag 'unshiu' %>
+  <%= javascript_include_tag 'dev-users' %>
 
   <%= yield :js %>
 
